@@ -4,7 +4,6 @@ import About from './Page/About';
 const App = () => {
   return (
     <section>
-      <About />
     </section>
   )
 }
