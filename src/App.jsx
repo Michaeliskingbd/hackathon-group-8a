@@ -1,11 +1,12 @@
 import React from 'react'
-import Instructors from './pages/Instructors';
+
+import About from './Page/About';
 
 const App = () => {
   return (
-    <div>
-      <Instructors />
-    </div>
+    <section>
+    </section>
+
   )
 }
 
