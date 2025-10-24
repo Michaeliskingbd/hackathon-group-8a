@@ -27,7 +27,7 @@ const Click = (index) => {
          adipisicing elit, sed do eiusmod.</h5>
     </div>
 
-    <div className='mt-36 flex-1'>
+    <div className='mt-36 flex-1 px-8'>
        {faqs.map((faq, index) => {
          const isOpen = openIndex === index;
     return (
