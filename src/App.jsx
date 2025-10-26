@@ -1,10 +1,13 @@
-import './App.css'
-import PricingPage from './pages/PricingPage'
 
-function App() {
+import React from 'react'
+import About from './Page/About';
+
+const App = () => {
   return (
-    <PricingPage/>
+    <section>
+    </section>
+
   )
 }
 
-export default App
+export default App;
