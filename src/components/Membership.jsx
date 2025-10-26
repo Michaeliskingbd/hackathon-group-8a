@@ -52,8 +52,8 @@ const Membership = () => {
     <div className='bg-cover bg-center bg-[url(https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-05-free-img.jpg)] rounded-br-[100px]'>
      <div className='bg-cyan-700/85 text-white py-32 px-8 rounded-br-[100px]'>
         <h1 className='text-7xl font-bold mb-8'>Pricing & FAQ</h1>
-      <p className='text-sm '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec <br/>
-         ullamcorper mattis, pulvinar dapibus leo.</p>
+      <p className='text-sm '>Choose the perfect learning plan for your goals. Flexible pricing options with unlimited access to<br/>
+          our courses and expert instructors.</p>
       </div>
     </div>
       
@@ -71,11 +71,11 @@ const Membership = () => {
           <li>|</li>
           <li>|</li>
     </ul>
-    <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-      sed do eiusmod tempor incididunt ut labore et<br/> dolore magna aliqua. Ut enim ad minim.</p>
+    <p className='mt-5'>Select a plan that fits your learning journey. All plans include lifetime access to purchased courses,
+       <br/> downloadable resources, and certificates of completion.</p>
   </div>
 
-   <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 ">
+   <div className='max-w-6xl mx-auto grid md:grid-cols-3 gap-8'>
         {memberships.map((plan, index) => (
           <Card
             key={index}
