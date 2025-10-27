@@ -1,5 +1,6 @@
 
 import React from 'react'
+
 import About from './Page/About';
 
 const App = () => {
@@ -11,3 +12,4 @@ const App = () => {
 }
 
 export default App;
+
