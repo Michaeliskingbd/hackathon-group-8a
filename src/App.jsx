@@ -1,9 +1,17 @@
 import React from "react";
 
-import Courses from "./Courses";
 
-function App() {
-  return <Courses />;
+import React from 'react'
+
+import About from './Page/About';
+
+const App = () => {
+  return (
+    <section>
+    </section>
+
+  )
+
 }
 
 export default App;
