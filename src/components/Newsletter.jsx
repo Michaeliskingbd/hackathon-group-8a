@@ -16,7 +16,6 @@ const Newsletter = () => {
             >
             <input
             id='emailInput'
-            value={email}
             onChange={(e) => setEmail(e.target.value)}
             className='w-[100%] h-[100%] indent-3 outline-none'
             type="text" placeholder='Enter your email' />
