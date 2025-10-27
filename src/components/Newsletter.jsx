@@ -1,35 +1,6 @@
 import React, { useState } from 'react'
 
 const Newsletter = () => {
-  
-const [email, setEmail] = useState("");
-const emailTest = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-const emailInput = document.getElementById("emailInput")
-const message = document.getElementById("message")
-const Form = document.getElementById("form")
-const newsMessage = document.getElementById("newsMessage")
-
-const handleEmailCheck = (e) => {
-  e.preventDefault();
-  if (emailTest.test(email.trim())) {
-    message.innerText = ""
-    Form.style.display = "none"
-    newsMessage.style.display = "block"
-  } else {
-    emailInput.style.border = "1px solid red"
-    message.innerText = "invalid email!"
-    btn.style.backgroundColor = "#Ff9635"
-    btn.innerText = "SUBSCRIBE"
-  }
-
-  setEmail("");
-  
-};
-
-
-  
-
-
   return (
     <section className='text-center py-24 space-y-10'>
         <div className='flex flex-col gap-2'>
@@ -39,8 +10,6 @@ const handleEmailCheck = (e) => {
         </div>
         <p id='newsMessage' className='text-gray-500 mt-0 font-[poppins] hidden'>Thanks for contacting us! We will be in touch with you shortly.</p>
         <form action=""
-        id='form'
-        onSubmit={handleEmailCheck}
         className='flex justify-center gap-5'>
             <div 
             className='border-[1px] w-[350px] h-[50px]'
