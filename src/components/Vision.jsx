@@ -2,7 +2,7 @@ import React from 'react'
 
 const Vision = () => {
   return (
-    <section className='px-8 flex justify-between'>
+    <section className='px-8 flex pb-32 justify-between'>
             <div className='font-[poppins] space-y-3'>
                 <p className='font-semibold text-lg'>Our Vision</p>
                 <h1 className='font-semibold text-[43px]'>Who We Are</h1>
