@@ -20,7 +20,11 @@ import Instructors from "./pages/Instructors";
 const App = () => {
   return (
     <section>
+<<<<<<< HEAD
+      <About />
+=======
       <Instructors />
+>>>>>>> 89b94ee4b1bdbce3f2453518337b25e067f0cba5
     </section>
 >>>>>>> main
   );
