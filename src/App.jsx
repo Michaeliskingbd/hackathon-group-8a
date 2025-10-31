@@ -1,5 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
+
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import AllCou from "./components/AllCou";
@@ -14,19 +14,7 @@ const App = () => {
       <Route path="/All" element={<AllCou />} />
       <Route path="/cour2" element={<Courses2A />} />
     </Routes>
-=======
-import Instructors from "./pages/Instructors";
 
-const App = () => {
-  return (
-    <section>
-<<<<<<< HEAD
-      <About />
-=======
-      <Instructors />
->>>>>>> 89b94ee4b1bdbce3f2453518337b25e067f0cba5
-    </section>
->>>>>>> main
   );
 };
 
