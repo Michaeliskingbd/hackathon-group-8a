@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaCaretRight } from 'react-icons/fa';
 
 
 const CardSection = ({img, course, name, about, contact}) => {
@@ -10,7 +11,7 @@ const CardSection = ({img, course, name, about, contact}) => {
       <h2 className='font-semibold'>{course}</h2>
       <h1 className='font-semibold text-2xl'>{name}</h1>
       <span className='w-[70px]'>{about}</span>
-      <p className='text-orange-400 hover:cursor-pointer'><i class="fa-solid fa-caret-right"></i>{contact}</p>
+      <p className='text-orange-400 hover:cursor-pointer flex items-center'><FaCaretRight />{contact}</p>
       </div>
       </div>
     </article>

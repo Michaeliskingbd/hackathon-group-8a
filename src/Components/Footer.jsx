@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <>
     <footer className=''>
-        <ul className='lg:h-[400px] lg:flex gap-3  justify-between white lg:p-32 p-10 px-3 lg:text-left text-center h-screen'>
+        <ul className='lg:h-[] lg:flex gap-3 justify-between white lg:p-32 p-10 px-3 lg:text-left text-center '>
             <li className='lg:flex flex-col gap-10'>
               <img className='w-36 lg:m-0 m-auto' src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/logo-retina.png" alt="" />
-            <p className='lg:w-[500px] lg:text-left text-center lg:text-[17px] text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-            <div className='flex gap-2 lg:pl-0 pl-[150px]'>
+            <p className='lg:w-[500px] lg:text-left text-center lg:text-[17px] text-sm lg:pt-0 pt-6'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            <div className='flex gap-2 lg:pl-0 pl-[150px] lg:pt-0 pt-24 md:pl-[340px]'>
                <FaFacebook /> 
               <FaTwitter />  
               <FaPinterest />
@@ -19,8 +19,8 @@ const Footer = () => {
             
             </li>
             <ul className='lg:flex flex-col'>
-            <li className='font-semibold text-2xl '>Popular Courses</li>
-            <div className='lg:pt-6 pt-2'>
+            <li className='font-semibold text-2xl lg:pt-0 pt-20'>Popular Courses</li>
+            <div className='lg:pt-6 pt-5'>
             <li className='hover:cursor-pointer hover:text-[#007991]'>LMS Interactive Content</li>
             <li className='hover:cursor-pointer hover:text-[#007991]'>Become a PHP Master</li>
             <li className='hover:cursor-pointer hover:text-[#007991]'>HTML5/CSS3 Essentials</li>
@@ -30,8 +30,8 @@ const Footer = () => {
             </div>
             </ul>
             <ul className=''>
-            <li className='font-semibold text-2xl'>Contact Info</li>
-            <div className='lg:pt-6 pt-2'>
+            <li className='font-semibold text-2xl lg:pt-0 pt-14'>Contact Info</li>
+            <div className='lg:pt-6 pt-5'>
             <li className='font-semibold'>Address</li>
             <li>123 Fifth Avenue, New York, NY 10160</li>
             <li className='font-semibold'>Phone</li>
@@ -47,7 +47,7 @@ const Footer = () => {
     
     </footer>
      <div className='border-[0.1px] border-t-0 mb-5'></div>
-        <div className='lg:flex justify-around h-10 px-3'> 
+        <div className='lg:flex lg:justify-around h-10 px-3'> 
         <p>copyright&copy; 2025</p>
         <span>Powered by Appclick students julycohort</span>
         </div>
