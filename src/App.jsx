@@ -1,17 +1,12 @@
 import React from "react";
-
-
-import React from 'react'
-
-import About from './Page/About';
+import Instructors from "./pages/Instructors";
 
 const App = () => {
   return (
     <section>
+      <Instructors />
     </section>
-
-  )
-
-}
+  );
+};
 
 export default App;
