@@ -1,11 +1,12 @@
 
 import React from 'react'
-import About from './Page/About';
+import PricingPage from './pages/PricingPage';
 
 const App = () => {
   return (
-    <section>
-    </section>
+    <div>
+      <PricingPage/>
+    </div>
 
   )
 }
