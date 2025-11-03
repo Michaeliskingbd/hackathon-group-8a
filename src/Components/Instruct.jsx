@@ -10,8 +10,8 @@ const Instruct = () => {
         </div>
        
    
-    <nav className='flex justify-between p-6 '>
-        <div className='lg:pl-36 z-50 pl-0 '>
+    <nav className='flex justify-between p-6 items-center'>
+        <div className='lg: z-50 pl-0 '>
             <img className='lg:w-32 w-24' src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-retina-free-img.png" alt="" />
             </div>
         <div className='z-50'>
@@ -27,7 +27,7 @@ const Instruct = () => {
         <div className='pr-24 z-50'>
 
             <button className='bg-orange-500 hover:bg-[#007991] transition-all duration-300 ease-in text-white rounded-3xl h-12 lg:w-48 w-[120px] font-semibold lg:flex hidden px-8 py-3 '>START LEARNING</button>
-            <GiHamburgerMenu className='lg:hidden flex text-2xl  text-white bg-orange-400  ' />
+            <GiHamburgerMenu className='lg:hidden flex justify-end items-end text-2xl  text-white bg-orange-400  ' />
         </div>
     </nav>
      <div className='lg:m-16 m-0 lg:pl-20 pl-7 lg:pt:0 pt-11 flex flex-col gap-5 z-50'>
