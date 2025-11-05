@@ -52,7 +52,7 @@ const MainHome = () => {
             </p>
           </div>
           <div className="flex">
-            <h3 className="text-white z-10 font-semibold text-[85px] leading-[1.2] w-[640px]">
+            <h3 className="text-white z-10 font-bold text-[70px] leading-[1.2] ">
               <Typewriter
                 words={["Education Opens up the Mind"]}
                 loop={0}
