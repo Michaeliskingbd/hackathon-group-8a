@@ -24,10 +24,11 @@ const Instruct = () => {
              <li>Contact</li> 
             </ul>
         </div>
-        <div className='pr-24 z-50'>
+        <div className='z-50'>
 
             <button className='bg-orange-500 hover:bg-[#007991] transition-all duration-300 ease-in text-white rounded-3xl h-12 lg:w-48 w-[120px] font-semibold lg:flex hidden px-8 py-3 '>START LEARNING</button>
-            <GiHamburgerMenu className='lg:hidden flex justify-end items-end text-2xl  text-white bg-orange-400  ' />
+            <button className='lg:hidden mr-5 flex justify-end items-end  text-white bg-orange-400'><GiHamburgerMenu className='p-1 text-3xl' />
+        </button>
         </div>
     </nav>
      <div className='lg:m-16 m-0 lg:pl-20 pl-7 lg:pt:0 pt-11 flex flex-col gap-5 z-50'>
