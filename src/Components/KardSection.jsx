@@ -3,8 +3,8 @@ import CardSection from './CardSection';
 
 const KardSection = () => {
   return (
-    <section className='bg-gray-200  '>
-        <div className=' grid lg:grid-cols-3 gap-5 grid-cols-1 lg:mx-28 mx-0'>
+    <section className='bg-gray-200 lg:pt-0 pt-32'>
+        <div className=' grid lg:grid-cols-3 gap-5 grid-cols-1 lg:mx-28 mx-4 md:grid-cols-2'>
         <CardSection
         img="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2021/03/instructor-02-free-img.jpg" 
         course="HTML5/CSS3 instructor"
