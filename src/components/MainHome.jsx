@@ -28,7 +28,9 @@ const MainHome = () => {
               <Link to="/instructors">
                 <li className="hover:cursor-pointer">Instructors</li>
               </Link>
-              <li className="hover:cursor-pointer">Pricing & FAQ</li>
+              <Link to="/pricingPage">
+                <li className="hover:cursor-pointer">Pricing & FAQ</li>
+              </Link>
               <li className="hover:cursor-pointer">Contact</li>
             </ul>
 
