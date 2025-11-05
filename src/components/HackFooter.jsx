@@ -14,10 +14,10 @@ const HackFooter = () => {
               className=""
             />
           </div>
-          <p className="text-lg pr-5 text-center lg:text-start">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim.
+          <p className="text-base font-extralight pr-5 text-center lg:text-start">
+            Gain the practical, in-demand skills you need to advance your
+            career, unlock your creativity, and succeed in today's digital
+            world.
           </p>
           <span className="flex items-center justify-center lg:justify-start text-2xl gap-4 text-[#007991]">
             <FaFacebookSquare className="hover:text-orange-400 cursor-pointer" />

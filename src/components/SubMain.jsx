@@ -2,7 +2,7 @@ import React from "react";
 
 const SubMain = () => {
   return (
-    <section className="py-28 pl-10 bg-[#ecf0f2]">
+    <section className="py-20 pl-10 bg-[#ecf0f2]">
       <article className=" flex lg:flex-row flex-col mb-20">
         <div className="flex-[50%]">
           <h1 className="text-5xl w-96 font-semibold leading-[1.2]">
@@ -52,9 +52,9 @@ const SubMain = () => {
         </div>
         <div className="flex-[50%] ">
           <p className="border-l-2 border-orange-400 pl-10 h-20 text-lg w-[580px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim.
+            Discover a wide range of top courses designed to help you master
+            in-demand skills, boost your career, enhance creativity, and thrive
+            in today's digital world.
           </p>
         </div>
         <div className="flex-[20%]">
@@ -65,30 +65,16 @@ const SubMain = () => {
       </article>
 
       <article className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit mr-10">
-        <div className="lg:w-[375px] w-full lg:h-[445px] h-full border-2 bg-white">
+        <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/html.jpg"
             alt=""
           />
           <div className="px-5 py-7 space-y-5">
             <h3 className="font-semibold text-4xl">HTML5/CSS3 Essentials</h3>
-            <p className="text-base">Lorem ipsum dolor sit amet consectetur.</p>
-
-            <button className="bg-blue-500 hover:bg-blue-600 hover:border-[1px] hover:border-black w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
-              See more...
-            </button>
-          </div>
-        </div>
-
-        <div className="lg:w-[375px] w-full lg:h-[445px] h-full border-2 bg-white">
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/wordpress.jpg"
-            alt=""
-          />
-          <div className="px-5 py-7 space-y-5">
-            <h3 className="font-semibold text-3xl">WordPress Basic Tutorial</h3>
-            <p className="text-base">
-              Repellat perspiciatis cum! Doloremque ea viverra.
+            <p className="text-sm">
+              Learn how to build modern, responsive websites from scratch using
+              the core technologies of the web.
             </p>
 
             <button className="bg-blue-500 hover:bg-blue-600 hover:border-[1px] hover:border-black w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
@@ -97,15 +83,36 @@ const SubMain = () => {
           </div>
         </div>
 
-        <div className="lg:w-[375px] w-full lg:h-[445px] h-full border-2 bg-white">
+        <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
+          <img
+            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/wordpress.jpg"
+            alt=""
+          />
+          <div className="px-5 py-7 space-y-4">
+            <h3 className="font-semibold text-3xl">
+              UI/UX Design Fundamentals
+            </h3>
+            <p className="text-sm">
+              Understand user-centered design, wireframing, prototyping, and
+              creating beautiful, functional interfaces.
+            </p>
+
+            <button className="bg-blue-500 hover:bg-blue-600 hover:border-[1px] hover:border-black w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
+              See more...
+            </button>
+          </div>
+        </div>
+
+        <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/ecommerce.jpg"
             alt=""
           />
           <div className="px-5 py-7 space-y-5">
-            <h3 className="font-semibold text-4xl">E-Commerce Course</h3>
-            <p className="text-base">
-              Ut ullamcorper viverra neque a porttitor.
+            <h3 className="font-semibold text-4xl">Cybersecurity Essentials</h3>
+            <p className="text-sm">
+              Learn how to protect systems, networks, and data from cyber
+              threats using industry best practices.
             </p>
 
             <button className="bg-blue-500 hover:bg-blue-600 hover:border-[1px] hover:border-black w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
