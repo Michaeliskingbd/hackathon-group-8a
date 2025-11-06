@@ -2,7 +2,7 @@ import React from "react";
 
 const EmailSecH = () => {
   return (
-    <section className="py-10 pl-10 lg:w-full bg-[#ecf0f2]">
+    <section className="py-10 pl-10 lg:w-full bg-[#ecf0f2] pr-5">
       <div className="text-center pt-14">
         <h3 className="font-bold text-4xl pb-5"> Join Our Community</h3>
         <p className="text-lg">

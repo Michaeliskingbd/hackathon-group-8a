@@ -3,6 +3,7 @@ import EmailSecH from "./EmailSecH";
 import { FaChevronCircleDown, FaRegCircle } from "react-icons/fa";
 import { IoIosArrowDown, IoMdMenu } from "react-icons/io";
 import HackFooter from "./HackFooter";
+import NavList from "../Utils/NavList";
 
 const Courses3A = () => {
   return (
@@ -17,21 +18,18 @@ const Courses3A = () => {
         </div>
         <div className="flex gap-6 items-center">
           <ul className="lg:flex gap-6 text-lg text-orange-400 hidden">
-            <li>Home</li>
-            <li>All Courses</li>
-            <li>About Us</li>
-            <li>Instructors</li>
-            <li>Pricing & FAQ</li>
-            <li>Contact</li>
+            <NavList />
           </ul>
 
           <button className="text-white lg:flex bg-orange-400 hover:bg-[#007991] px-5 py-2 font-semibold rounded-3xl hidden">
             START LEARNING
           </button>
-          <IoMdMenu className="lg:hidden bg-orange-400 text-white w-10 h-10 block text-3xl" />
+          <button className="lg:hidden bg-orange-400 Block p-[3px]">
+            <IoMdMenu className="text-white w-10 h-8 hover:bg-#007991" />
+          </button>
         </div>
       </nav>
-      <article className="bg-white w-fit mx-10 my-14 pl-[78px] pr-12 py-24">
+      <article className="bg-white w-fit lg:mx-10 mx-7 my-14 lg:pl-[78px] px-5 lg:pr-12 py-14">
         <div className="">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/ecommerce.jpg"
@@ -67,7 +65,9 @@ const Courses3A = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-4 justify-between pt-20 pb-10">
-          <h3 className="font-semibold text-center text-3xl">Course Content</h3>
+          <h3 className="font-semibold text-center lg:text-3xl text-2xl">
+            Course Content
+          </h3>
 
           <button className="justify-center text-white flex items-center gap-2 bg-orange-300 text-sm px-5 py-3 font-semibold rounded-3xl">
             <IoIosArrowDown />

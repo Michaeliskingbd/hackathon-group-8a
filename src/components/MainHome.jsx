@@ -7,14 +7,14 @@ import { Typewriter } from "react-simple-typewriter";
 const MainHome = () => {
   return (
     <section className="bg-[#ecf0f2]">
-      <article className="relative rounded-br-[150px] lg:h-[150vh] h-[110vh] bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-01-free-img.jpg')] bg-fixed bg-cover bg-center">
+      <article className="relative rounded-br-[150px] lg:h-[110vh] h-[90vh] bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-01-free-img.jpg')] bg-fixed bg-cover bg-center">
         <div className="absolute bg-[#007991] inset-0 opacity-85 rounded-br-[150px]"></div>
         <nav className="flex items-center justify-between">
           <div className="z-10">
             <img
               src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-retina-free-img.png"
               alt="logo"
-              className="w-48 my-7 mx-10"
+              className="w-44 my-7 mx-10"
             />
           </div>
           <div className="flex items-center gap-10 mx-8 z-10">
@@ -22,14 +22,18 @@ const MainHome = () => {
               <Link to="/">
                 <li className="hover:cursor-pointer">Home</li>
               </Link>
-              <li className="hover:cursor-pointer">All Courses</li>
+              <Link to="/AllCourses">
+                <li className="hover:cursor-pointer">All Courses</li>
+              </Link>
               <Link to="/aboutPage">
                 <li className="hover:cursor-pointer">About Us</li>
               </Link>
               <Link to="/instructors">
                 <li className="hover:cursor-pointer">Instructors</li>
               </Link>
-              <li className="hover:cursor-pointer">Pricing & FAQ</li>
+              <Link to="/pricingPage">
+                <li className="hover:cursor-pointer">Pricing & FAQ</li>
+              </Link>
               <li className="hover:cursor-pointer">Contact</li>
             </ul>
 
@@ -78,7 +82,7 @@ const MainHome = () => {
               </Link>
               <div className="flex items-center gap-2 text-white text-base font-semibold hover:text-orange-400">
                 <FaPlay className="text-sm p-[2px]" />
-                <Link to="/All">
+                <Link to="/AllCourses">
                   <a href="">ALL COURSES</a>
                 </Link>
               </div>
