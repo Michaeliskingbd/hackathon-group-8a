@@ -48,8 +48,9 @@ const AllCrsHs = () => {
             All Courses
           </h3>
           <p className="z-10 text-white w-[580px] font-normal text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Unlock your potential with expert-led tech courses designed to help
+            you master coding, design, data science, and other in-demand digital
+            skills.
           </p>
         </div>
       </article>

@@ -5,6 +5,7 @@ import AllCou from "./components/AllCou";
 import Courses2A from "./components/Courses2A";
 import AllCourses from "./pages/AllCourses";
 import Courses3A from "./components/Courses3A";
+import CrsExtend from "./Components/CrsExtend";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       {/* <Route path="/pricingPage" element={<PricingPage />} /> */}
       <Route path="/Cou2" element={<Courses2A />} />
       <Route path="/Cou3" element={<Courses3A />} />
+      <Route path="/Ext" element={<CrsExtend />} />
     </Routes>
   );
 };

@@ -6,7 +6,7 @@ import HackFooter from "../components/HackFooter";
 
 const AllCourses = () => {
   return (
-    <div className="selection:bg-orange-400 w-fit lg:w-full">
+    <div className="selection:bg-orange-400 selection:text-black w-fit lg:w-full">
       <AllCrsHs />
       <AllCrsMs />
       <EmailSecH />

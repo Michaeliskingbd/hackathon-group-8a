@@ -11,12 +11,15 @@ const MainHome = () => {
         <div className="absolute bg-[#007991] inset-0 opacity-85 rounded-br-[150px]"></div>
         <nav className="flex items-center justify-between">
           <div className="z-10">
-            <img
-              src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-retina-free-img.png"
-              alt="logo"
-              className="w-44 my-7 mx-10"
-            />
+            <Link to="/Ext">
+              <img
+                src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-retina-free-img.png"
+                alt="logo"
+                className="w-44 my-7 mx-10"
+              />
+            </Link>
           </div>
+
           <div className="flex items-center gap-10 mx-8 z-10">
             <ul className="text-white text-base lg:flex gap-5 hidden">
               <Link to="/">
@@ -80,10 +83,10 @@ const MainHome = () => {
                   START COURSE
                 </button>
               </Link>
-              <div className="flex items-center gap-2 text-white text-base font-semibold hover:text-orange-400">
+              <div className="flex items-center gap-2 text-white text-base font-semibold hover:text-orange-400 hover:cursor-pointer">
                 <FaPlay className="text-sm p-[2px]" />
                 <Link to="/AllCourses">
-                  <a href="">ALL COURSES</a>
+                  <p>ALL COURSES</p>
                 </Link>
               </div>
             </div>
