@@ -14,10 +14,10 @@ const HackFooter = () => {
               className=""
             />
           </div>
-          <p className="text-lg pr-5 text-center lg:text-start">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim.
+          <p className="text-base font-extralight pr-5 text-center lg:text-start">
+            Gain the practical, in-demand skills you need to advance your
+            career, unlock your creativity, and succeed in today's digital
+            world.
           </p>
           <span className="flex items-center justify-center lg:justify-start text-2xl gap-4 text-[#007991]">
             <FaFacebookSquare className="hover:text-orange-400 cursor-pointer" />
@@ -32,7 +32,7 @@ const HackFooter = () => {
           <h3 className="font-bold text-2xl py-5">Popular Courses</h3>
           <div className="flex flex-col">
             <a href="" className="hover:text-[#007991]">
-              LMS Interactive Content
+              Introduction to Coding
             </a>
             <a href="" className="hover:text-[#007991]">
               Become a PHP Master
@@ -44,10 +44,10 @@ const HackFooter = () => {
               JavaScript Development
             </a>
             <a href="" className="hover:text-[#007991]">
-              WordPress Basic Tutorial
+              Cybersecurity Essentials
             </a>
             <a href="" className="hover:text-[#007991]">
-              Introduction to Coding
+              UI/UX Design Fundamentals
             </a>
           </div>
         </div>
