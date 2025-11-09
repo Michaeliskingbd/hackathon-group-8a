@@ -21,12 +21,12 @@ const Footer = () => {
             <ul className='lg:flex flex-col'>
             <li className='font-semibold text-2xl lg:pt-0 pt-20'>Popular Courses</li>
             <div className='lg:pt-6 pt-5'>
-            <li className='hover:cursor-pointer hover:text-[#007991]'>LMS Interactive Content</li>
-            <li className='hover:cursor-pointer hover:text-[#007991]'>Become a PHP Master</li>
+            <li className='hover:cursor-pointer hover:text-[#007991]'>UI/UX Design Fundmentals</li>
+            <li className='hover:cursor-pointer hover:text-[#007991]'>Digital Marketing</li>
             <li className='hover:cursor-pointer hover:text-[#007991]'>HTML5/CSS3 Essentials</li>
             <li className='hover:cursor-pointer hover:text-[#007991]'>JavaScript Development</li>
             <li className='hover:cursor-pointer hover:text-[#007991]'>WordPress Basic Tutorial</li>
-            <li className='hover:cursor-pointer hover:text-[#007991]'>Introduction to Coding</li>
+            <li className='hover:cursor-pointer hover:text-[#007991]'>Cybersecurity</li>
             </div>
             </ul>
             <ul className=''>
