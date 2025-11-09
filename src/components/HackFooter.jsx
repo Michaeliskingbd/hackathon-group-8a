@@ -32,10 +32,10 @@ const HackFooter = () => {
           <h3 className="font-bold text-2xl py-5">Popular Courses</h3>
           <div className="flex flex-col">
             <a href="" className="hover:text-[#007991]">
-              Introduction to Coding
+              Digital Marketing
             </a>
             <a href="" className="hover:text-[#007991]">
-              Become a PHP Master
+              WordPress Basic Tutorial
             </a>
             <a href="" className="hover:text-[#007991]">
               HTML5/CSS3 Essentials
