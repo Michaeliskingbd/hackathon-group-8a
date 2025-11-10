@@ -1,3 +1,4 @@
+
 import React from "react";
 
 
@@ -11,8 +12,10 @@ import Courses3A from "./components/Courses3A";
 import CrsExtend from "./Components/CrsExtend";
 
 
+
 const App = () => {
   return (
+
     <Routes>
       <Route path="/" index element={<Home />} />
 
@@ -28,6 +31,7 @@ const App = () => {
     </Routes>
   );
 };
+
 
 
 export default App;
