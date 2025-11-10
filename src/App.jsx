@@ -2,6 +2,7 @@
 import React from 'react'
 import PricingPage from './pages/PricingPage';
 
+
 const App = () => {
   return (
     <div>
@@ -12,3 +13,4 @@ const App = () => {
 }
 
 export default App;
+
