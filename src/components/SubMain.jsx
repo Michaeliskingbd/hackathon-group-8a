@@ -3,7 +3,7 @@ import React from "react";
 const SubMain = () => {
   return (
     <section className="py-28 pl-10 bg-[#ecf0f2]">
-      <article className=" flex items-center mb-20">
+      <article className=" flex lg:flex-row flex-col mb-20">
         <div className="flex-[50%]">
           <h1 className="text-5xl w-96 font-semibold leading-[1.2]">
             Technologies You Will Learn
@@ -45,7 +45,7 @@ const SubMain = () => {
         </div>
       </article>
 
-      <article className="flex mb-20">
+      <article className="flex lg:flex-row flex-col space-y-7 mb-20">
         <div className="flex-[30%] space-y-3">
           <h5 className="font-semibold text-lg">Top Categories</h5>
           <h2 className="font-bold text-4xl">Popular Courses</h2>
@@ -64,8 +64,8 @@ const SubMain = () => {
         </div>
       </article>
 
-      <article className="grid grid-cols-3">
-        <div className="w-[375px] h-[445px] border-2 bg-white">
+      <article className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit mr-10">
+        <div className="lg:w-[375px] w-full lg:h-[445px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/html.jpg"
             alt=""
@@ -80,7 +80,7 @@ const SubMain = () => {
           </div>
         </div>
 
-        <div className="w-[375px] h-[445px] border-2 bg-white">
+        <div className="lg:w-[375px] w-full lg:h-[445px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/wordpress.jpg"
             alt=""
@@ -97,7 +97,7 @@ const SubMain = () => {
           </div>
         </div>
 
-        <div className="w-[375px] h-[445px] border-2 bg-white">
+        <div className="lg:w-[375px] w-full lg:h-[445px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/ecommerce.jpg"
             alt=""

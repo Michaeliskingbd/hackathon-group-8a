@@ -4,8 +4,8 @@ import { FaCertificate, FaCrown, FaPlay, FaRegClock } from "react-icons/fa";
 const Sub2 = () => {
   return (
     <section className="py-16 bg-[#ecf0f2]">
-      <article className="relative px-10 flex gap-8 items-center h-96 w-full bg-center bg-cover bg-fixed bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/background1.jpg')]">
-        <div className="absolute bg-[#007991] inset-0 opacity-90"></div>
+      <article className="relative px-10 flex lg:flex-row flex-col gap-8 items-center lg:h-96 h-full w-full bg-center bg-cover bg-fixed bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/background1.jpg')]">
+        <div className="absolute bg-[#007991] inset-0 opacity-[0.95]"></div>
         <div className=" py-32 flex-[22%] z-10">
           <h1 className="text-white font-semibold text-3xl mb-4">Experience</h1>
           <p className="text-white font-lg">
@@ -46,7 +46,7 @@ const Sub2 = () => {
         </div>
       </article>
 
-      <article className="flex px-10 py-20">
+      <article className="flex lg:flex-row flex-col px-10 py-20 space-y-7">
         <div className="flex-1 space-y-4">
           <h5 className="font-semibold text-lg">Features of Our Courses</h5>
           <h2 className="font-semibold text-5xl">Why choose Us?</h2>
@@ -56,8 +56,8 @@ const Sub2 = () => {
           </p>
         </div>
 
-        <div className="flex-1 pl-20">
-          <div className="flex gap-5 h-fit w-fit space-y-5 justify-center items-center">
+        <div className="flex-1 lg:pl-20 space-y-10">
+          <div className="flex lg:flex-row flex-col lg:gap-5 h-fit w-fit lg:space-y-5 lg:justify-center lg:items-center">
             <div className="bg-orange-400 w-[40px] h-[40px] p-3 text-2xl flex items-center justify-center rounded-[100%] text-white hover:text-[#007991]">
               <FaCrown />
             </div>
@@ -70,7 +70,7 @@ const Sub2 = () => {
             </div>
           </div>
 
-          <div className="flex gap-5 h-fit w-fit space-y-5 justify-center items-center">
+          <div className="flex lg:flex-row flex-col lg:gap-5 h-fit w-fit lg:space-y-5 lg:justify-center lg:items-center">
             <div className="bg-orange-400 w-[40px] h-[40px] p-3 text-2xl flex items-center justify-center rounded-[100%] text-white hover:text-[#007991]">
               <FaRegClock />
             </div>
@@ -85,7 +85,7 @@ const Sub2 = () => {
             </div>
           </div>
 
-          <div className="flex gap-5 h-fit items-center justify-center w-fit space-y-5">
+          <div className="flex lg:flex-row flex-col lg:gap-5 h-fit lg:items-center lg:justify-center w-fit lg:space-y-5">
             <div className="bg-orange-400 w-[40px] p-3 h-[40px]  flex items-center justify-center rounded-[100%] text-white hover:text-[#007991]">
               <FaCertificate />
             </div>

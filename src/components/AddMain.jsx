@@ -4,7 +4,7 @@ import { FaRegStar, FaStar } from "react-icons/fa";
 const AddMain = () => {
   return (
     <section className="py-10 pl-10 bg-gradient-to-b from-[#ecf0f2] to-[#fcfafa]">
-      <article className="flex">
+      <article className="flex lg:flex-row flex-col space-y-14">
         <div className="flex-1 space-y-4">
           <h6 className="font-semibold text-xl">Testimonials</h6>
           <h2 className="font-semibold text-5xl leading-[1.2]">
@@ -13,7 +13,7 @@ const AddMain = () => {
         </div>
 
         <div className="flex-1">
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex lg:items-center lg:justify-center gap-4">
             <h1 className="font-bold text-8xl">4.8</h1>
             <div className="flex flex-col space-y-2">
               <span className="flex text-orange-400 gap-2 text-xs">
@@ -31,7 +31,7 @@ const AddMain = () => {
       </article>
 
       <article className="pt-28 pr-12">
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div className="relative bg-white border pl-10 pt-14 pb-2 pr-1 rounded-2xl space-y-7 mb-20">
             <p className="text-base">
               “Massa amet, at dolor tellus pellentesque aenean in eget massa

@@ -8,7 +8,7 @@ import AddMain from "../components/AddMain";
 
 const Home = () => {
   return (
-    <div className="selection:bg-orange-400">
+    <div className="selection:bg-orange-400 w-fit lg:w-full">
       <MainHome />
       <SubMain />
       <Sub2 />
