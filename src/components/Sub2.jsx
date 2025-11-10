@@ -3,32 +3,183 @@ import { FaCertificate, FaCrown, FaPlay, FaRegClock } from "react-icons/fa";
 
 const Sub2 = () => {
   return (
-    <section className="py-16 bg-[#ecf0f2]">
+    <section className="py-14 bg-[#ecf0f2]">
       <article className="relative px-10 flex lg:flex-row flex-col gap-8 items-center lg:h-96 h-full w-full bg-center bg-cover bg-fixed bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/background1.jpg')]">
         <div className="absolute bg-[#007991] inset-0 opacity-[0.95]"></div>
-        <div className=" py-32 flex-[22%] z-10">
-          <h1 className="text-white font-semibold text-3xl mb-4">Experience</h1>
-          <p className="text-white font-lg">
-            Lorem ipsum dolor sit amet, consec tetur adipis cing elit. Ut elit
-            tellus, luctus nec ullam corper mattis, pulvinar dapibus.
-          </p>
-        </div>
-
-        <div className="px- py-32 flex-[22%] z-10">
-          <h1 className="text-white font-semibold text-3xl mb-4">Education</h1>
-          <p className="text-white font-lg">
-            Lorem ipsum dolor sit amet, consec tetur adipis cing elit. Ut elit
-            tellus, luctus nec ullam corper mattis, pulvinar dapibus.
-          </p>
-        </div>
-
-        <div className="px- py-32 flex-[22%] z-10">
-          <h1 className="text-white font-semibold text-3xl mb-4">
-            Certificate
+        <div className="lg:py-28 py-10 flex-[22%] z-10">
+          <div className="flex gap-[2px] pt-[30px] pb-2 ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+          </div>
+          <h1 className="text-white font-bold text-3xl pt-4 mb-4">
+            Experience
           </h1>
-          <p className="text-white font-lg">
-            Lorem ipsum dolor sit amet, consec tetur adipis cing elit. Ut elit
-            tellus, luctus nec ullam corper mattis, pulvinar dapibus.
+          <p className="text-white text-sm font-thin italic">
+            Trusted by thousands of students worldwide for delivering
+            high-quality, engaging learning experiences.
+          </p>
+        </div>
+
+        <div className=" lg:py-28 py-10  flex-[22%] z-10">
+          <div className="flex gap-[2px] pt-[38px] pb-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+          </div>
+          <h1 className="text-white font-bold text-3xl pt-5 mb-4">Education</h1>
+          <p className="text-white text-sm font-thin italic">
+            Empowering students with knowledge that leads to opportunity and
+            growth by learning from expert instructors through structured,
+            easy-to-understand lessons.
+          </p>
+        </div>
+
+        <div className=" lg:py-28 py-10 flex-[22%] z-10">
+          <div className="flex gap-[2px] py-6 pt-[35px] pb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="visible"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="#fb923c"
+              stroke="none"
+              className=" w-[20px] h-[8px]"
+            >
+              <polygon points="9.4,2 24,2 14.6,21.6 0,21.6" />
+            </svg>
+          </div>
+          <h1 className="text-white font-bold text-3xl mb-4">Certificate</h1>
+          <p className="text-white text-sm font-thin italic">
+            Receive a verified and recognized certificate that highlights your
+            dedication, expertise, and readiness for new opportunities.
           </p>
         </div>
 
@@ -50,9 +201,17 @@ const Sub2 = () => {
         <div className="flex-1 space-y-4">
           <h5 className="font-semibold text-lg">Features of Our Courses</h5>
           <h2 className="font-semibold text-5xl">Why choose Us?</h2>
-          <p className="text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="font-light">
+            We provide more than just online courses- we offer a complete
+            learning experience designed for your success. Our platform combines
+            expert instructors, easy-to-follow lessons, and hands-on projects to
+            help you master real-world skills. With flexible learning schedules,
+            affordable pricing, and lifetime access to course materials, you can
+            learn at your own pace, anytime and anywhere. Whether you're
+            starting a new career, upgrading your skills, or exploring your
+            passion, we're here to guide you every step of the way. Join
+            thousands of satisfied learners who trust us for quality education
+            and real results.
           </p>
         </div>
 
@@ -61,11 +220,11 @@ const Sub2 = () => {
             <div className="bg-orange-400 w-[40px] h-[40px] p-3 text-2xl flex items-center justify-center rounded-[100%] text-white hover:text-[#007991]">
               <FaCrown />
             </div>
-            <div className="space-y-1">
+            <div className="space-y-2">
               <h3 className="font-bold text-2xl">Best Industry Leaders</h3>
               <p className="text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper.
+                Our courses are taught by top professionals and industry experts
+                who bring real-world experience into every lesson.
               </p>
             </div>
           </div>
@@ -74,13 +233,14 @@ const Sub2 = () => {
             <div className="bg-orange-400 w-[40px] h-[40px] p-3 text-2xl flex items-center justify-center rounded-[100%] text-white hover:text-[#007991]">
               <FaRegClock />
             </div>
-            <div className="space-y-1">
+            <div className="space-y-2">
               <h3 className="font-bold text-2xl">
                 Learn Online at Your Own Pace
               </h3>
               <p className="text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper.
+                Enjoy the freedom to learn whenever and wherever you want. Our
+                flexible courses let you study at your own speed-pause, rewind,
+                or resume anytime.
               </p>
             </div>
           </div>
@@ -89,11 +249,13 @@ const Sub2 = () => {
             <div className="bg-orange-400 w-[40px] p-3 h-[40px]  flex items-center justify-center rounded-[100%] text-white hover:text-[#007991]">
               <FaCertificate />
             </div>
-            <div className="space-y-1">
+            <div className="space-y-2">
               <h3 className="font-bold text-2xl">Professional Certification</h3>
               <p className="text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper.
+                Earn recognized certificates that prove your skills and enhance
+                your career opportunities. Each certification reflects your
+                dedication, expertise, and ability to apply what you've learned
+                in real-world situations.
               </p>
             </div>
           </div>
