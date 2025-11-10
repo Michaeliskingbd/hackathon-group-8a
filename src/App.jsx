@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import AllCou from "./components/AllCou";
@@ -20,5 +21,6 @@ const App = () => {
     </Routes>
   );
 };
+
 
 export default App;
