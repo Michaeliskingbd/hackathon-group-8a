@@ -1,54 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SubMain = () => {
+const AllCrsMs = () => {
   return (
-    <section className="py-20 pl-10 bg-[#ecf0f2]">
-      <article className=" flex lg:flex-row flex-col mb-20">
-        <div className="flex-[50%]">
-          <h1 className="text-5xl w-96 font-semibold leading-[1.2]">
-            Technologies You Will Learn
-          </h1>
-        </div>
-        <div className="flex flex-[50%] gap-6 p-[40px]">
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/html5.svg"
-            alt=""
-          />
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/css3.svg"
-            alt=""
-          />
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/js.svg"
-            alt=""
-          />
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/node-js.svg"
-            alt=""
-          />
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/vuejs.svg"
-            alt=""
-          />
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/react.svg"
-            alt=""
-          />
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/python.svg"
-            alt=""
-          />
-          <img
-            src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/angular.svg"
-            alt=""
-          />
-        </div>
-      </article>
-
+    <section className="pt-20 px-10 bg-[#ecf0f2]">
       <article className="flex lg:flex-row flex-col space-y-7 mb-20">
         <div className="flex-[30%] space-y-3">
-          <h5 className="font-semibold text-lg">Top Categories</h5>
+          <h5 className="font-semibold text-lg">Course Program</h5>
           <h2 className="font-bold text-4xl">Popular Courses</h2>
         </div>
         <div className="flex-[50%] ">
@@ -59,15 +17,13 @@ const SubMain = () => {
           </p>
         </div>
         <div className="flex-[20%]">
-          <Link to="/AllCourses">
-            <button className="bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] text-white px-6 py-2 rounded-3xl">
-              VIEW ALL COURSES
-            </button>
-          </Link>
+          <button className="bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] text-white px-6 py-2 rounded-3xl">
+            VIEW PROGRESS
+          </button>
         </div>
       </article>
 
-      <article className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit mr-10">
+      <article className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit lg:mr-10">
         <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/html.jpg"
@@ -80,7 +36,7 @@ const SubMain = () => {
               the core technologies of the web.
             </p>
             <Link to="/All">
-              <button className="bg-blue-400 hover:bg-blue-600 hover:border-[1px] hover:border-gray-500 w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
+              <button className="bg-blue-400 hover:bg-blue-600 hover:border-[1px] hover:border-gray w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
                 See more...
               </button>
             </Link>
@@ -101,7 +57,7 @@ const SubMain = () => {
               creating beautiful, functional interfaces.
             </p>
             <Link to="/Cou2">
-              <button className="bg-blue-400 hover:bg-blue-600 hover:border-[1px] hover:border-gray-500 w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
+              <button className="bg-blue-400 hover:bg-blue-600 hover:border-[1px] hover:border-gray w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
                 See more...
               </button>
             </Link>
@@ -120,7 +76,7 @@ const SubMain = () => {
               threats using industry best practices.
             </p>
             <Link to="/Cou3">
-              <button className="bg-blue-400 hover:bg-blue-600 hover:border-[1px] hover:border-gray-500 w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
+              <button className="bg-blue-400 hover:bg-blue-600 hover:border-[1px] hover:border-gray w-full px-6 py-2 rounded-lg text-white font-medium text-sm">
                 See more...
               </button>
             </Link>
@@ -131,4 +87,4 @@ const SubMain = () => {
   );
 };
 
-export default SubMain;
+export default AllCrsMs;

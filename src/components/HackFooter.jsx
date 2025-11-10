@@ -32,7 +32,7 @@ const HackFooter = () => {
           <h3 className="font-bold text-2xl py-5">Popular Courses</h3>
           <div className="flex flex-col">
             <a href="" className="hover:text-[#007991]">
-              LMS Interactive Content
+              Introduction to Coding
             </a>
             <a href="" className="hover:text-[#007991]">
               Become a PHP Master
@@ -44,10 +44,10 @@ const HackFooter = () => {
               JavaScript Development
             </a>
             <a href="" className="hover:text-[#007991]">
-              WordPress Basic Tutorial
+              Cybersecurity Essentials
             </a>
             <a href="" className="hover:text-[#007991]">
-              Introduction to Coding
+              UI/UX Design Fundamentals
             </a>
           </div>
         </div>
