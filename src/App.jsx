@@ -23,35 +23,8 @@ const App = () => {
  
      
 
-   <Routes>
-    <Route path='/instructor' element={<Instructors />} />
-    <Route path='/contact' element={<Contact />}/>
-
-    
-  
-   
-
-
-
-    {/* //Dashboard */}
-     <Route path="/" element={<Layout />}>
-   <Route index element={<Home />} /> 
-   <Route path='/dashboard' element={<Dashboard />} />
-   <Route path='/DashboardProfile' element={<Profile />} /> 
-    <Route path='/DashboardResources' element={<Resources />} /> 
-     <Route path='/DashboardCourses' element={<Courses />} /> 
-     <Route path='/DashboardJob' element={<JobPage />} /> 
-      <Route path='/form' element={<Form />} /> 
-      <Route path='/notice' element={<NoticeBoard />} /> 
-      <Route path='/assignment' element={<Assignment />} />
-     
-  
-   </Route>
-
-   </Routes> 
-   
-      
-     
+ 
+    <div></div>
    
   )
 }

@@ -8,7 +8,7 @@ const Footer = () => {
         <ul className='lg:h-[] lg:flex gap-3 justify-between white lg:p-11 p-10 px-3 lg:text-left text-center '>
             <li className='lg:flex flex-col gap-10'>
               <img className='w-36 lg:m-0 m-auto' src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/logo-retina.png" alt="" />
-            <p className='lg:w-[500px] lg:text-left text-center lg:text-[17px] text-sm lg:pt-0 pt-6'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            <p className='lg:w-[500px] lg:text-left text-center lg:text-[17px] text-sm lg:pt-0 pt-6'>Gain the practical, in-demand skills, you need to advance your carer, unlock your creativity and succeed in today's digital world.</p>
             <div className='flex gap-2 lg:pl-0 pl-[150px] lg:pt-0 pt-24 md:pl-[340px]'>
                <FaFacebook /> 
               <FaTwitter />  
