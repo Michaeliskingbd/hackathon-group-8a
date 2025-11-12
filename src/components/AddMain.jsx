@@ -59,12 +59,12 @@ const AddMain = () => {
               <FaStar />
             </span>
 
-            <div className="absolute top-[-70px]">
+            <div className="absolute top-[-100px]">
               <img
                 src={images1}
                 //"https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-01.jpg"
                 alt=""
-                className="rounded-xl w-20 h-20"
+                className="rounded-xl w-20 h20"
               />
             </div>
           </div>
@@ -84,12 +84,12 @@ const AddMain = () => {
               <FaStar />
             </span>
 
-            <div className="absolute top-[-70px]">
+            <div className="absolute top-[-100px]">
               <img
                 src={images2}
                 //"https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-02.jpg"
                 alt=""
-                className="rounded-xl w-20 h-20"
+                className="rounded-xl w-20 h20"
               />
             </div>
           </div>
@@ -109,12 +109,12 @@ const AddMain = () => {
               <FaStar />
             </span>
 
-            <div className="absolute top-[-70px]">
+            <div className="absolute top-[-100px]">
               <img
                 src={images3}
                 //"https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-03.jpg"
                 alt=""
-                className="rounded-xl w-20 h-20"
+                className="rounded-xl w-20 h20"
               />
             </div>
           </div>
@@ -134,12 +134,12 @@ const AddMain = () => {
               <FaStar />
             </span>
 
-            <div className="absolute top-[-70px]">
+            <div className="absolute top-[-100px]">
               <img
                 src={images4}
                 //"https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-04.jpg"
                 alt=""
-                className="rounded-xl w-20 h-20"
+                className="rounded-xl w-20 h20"
               />
             </div>
           </div>

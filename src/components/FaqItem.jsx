@@ -6,38 +6,37 @@ const FaqItem = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const faqs = [
-<<<<<<< HEAD
-     { question: "Who Should Take an Online Course?",
-       answer: "Anyone looking to learn new skills, advance their career, or explore personal interests. " },
-    { question: "How Do I Access My Course?", 
-      answer: "After enrollment, you'll receive a confirmation email with your login details. Simply log in to your dashboard to access all your courses." },
-    { question: "Are There Prerequisites or Language Requirements?", 
-      answer: "Prerequisites vary by course and are listed on each course page. All courses are taught in English." },
-    { question: "Can I take more than One Course at a Time?", 
-      answer: "Yes! You can enroll in multiple courses and access them all from your dashboard. " },
-    { question: "My Payment Did Not Go Through. What Do I do?", 
-      answer: "Check your payment details and try again. If the issue continues, contact our support team." },
-    { question: "How Does Online Learning Work?",
-     answer: "Access video lessons, resources, and assignments anytime from any device." },
-]
-=======
-    { question: "Who Should Take an Online Course?", answer: "Anyone!" },
-    { question: "How Do I Access My Course?", answer: "Through your email" },
+    {
+      question: "Who Should Take an Online Course?",
+      answer:
+        "Anyone looking to learn new skills, advance their career, or explore personal interests. ",
+    },
+    {
+      question: "How Do I Access My Course?",
+      answer:
+        "After enrollment, you'll receive a confirmation email with your login details. Simply log in to your dashboard to access all your courses.",
+    },
     {
       question: "Are There Prerequisites or Language Requirements?",
-      answer: "Check the course page",
+      answer:
+        "Prerequisites vary by course and are listed on each course page. All courses are taught in English.",
     },
-    { question: "Can I take more than One Course at a Time?", answer: "Yes" },
+    {
+      question: "Can I take more than One Course at a Time?",
+      answer:
+        "Yes! You can enroll in multiple courses and access them all from your dashboard. ",
+    },
     {
       question: "My Payment Did Not Go Through. What Do I do?",
-      answer: "Contact support",
+      answer:
+        "Check your payment details and try again. If the issue continues, contact our support team.",
     },
     {
-      question: "How Does Online Learning Work",
-      answer: "Through virtual classes",
+      question: "How Does Online Learning Work?",
+      answer:
+        "Access video lessons, resources, and assignments anytime from any device.",
     },
   ];
->>>>>>> ca061d6f1dcf108cadc485a9c60dd7915841f309
 
   const Click = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -84,7 +83,7 @@ const FaqItem = () => {
           })}
         </div>
       </section>
-      <section className="mb-10 mt-36 text-center">
+      {/* <section className="mb-10 mt-36 text-center">
         <h1 className="text-5xl text-black font-bold mb-6">
           Join Our Community
         </h1>
@@ -102,7 +101,7 @@ const FaqItem = () => {
             Subscribe
           </button>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
