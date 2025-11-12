@@ -53,31 +53,31 @@ const SideBar = ({isOpen, setIsOpen}) => {
         {/* Navigation */}
         <nav className="space-y-6 bg-[#007991] lg:h-screen pt-3  ">
           <NavItem
-            to="/dash"
+            to="/dashboard"
             icon={<Home className="h-4 w-4" />}
             label="Dashboard"
             active={location.pathname === "/dash"}
           />
           <NavItem
-            to="/profile"
+            to="/DashboardProfile"
             icon={<FaRegUser className="h-4 w-4" />}
             label="Profile"
             active={location.pathname === "/profile"}
           />
           <NavItem
-            to="/resources"
+            to="/DashboardResources"
             icon={<GrResources className="h-4 w-4" />}
             label="Resources"
             active={location.pathname === "/resources"}
           />
           <NavItem
-            to="/courses"
+            to="/DashboardCourses"
             icon={<LiaAddressBookSolid className="h-4 w-4" />}
             label="Courses"
             active={location.pathname === "/courses"}
           />
           <NavItem
-            to="/job"
+            to="/DashboardJob"
             icon={<Briefcase className="h-4 w-4" />}
             label="JobPage"
             active={location.pathname === "/job"}

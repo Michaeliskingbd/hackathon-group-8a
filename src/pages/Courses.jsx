@@ -18,7 +18,7 @@ const Courses = () => {
         {courses.map(course => (
           <article key={course.id} className="hover:shadow-lg transition-shadow">
             <div>
-              <div className="w-full h-32 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mb-4 flex items-center justify-center">
+              <div className="w-full h-32 bg-[#007991] rounded-lg mb-4 flex items-center justify-center">
                 <BookOpen size={48} className="text-white" />
               </div>
               <div className="text-lg">{course.title}</div>
@@ -31,7 +31,7 @@ const Courses = () => {
                   <span className="font-semibold text-blue-600">{course.progress}%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-blue-600 h-2 rounded-full" style={{ width: `${course.progress}%` }}></div>
+                  <div className="bg-cyan-500 h-2 rounded-full" style={{ width: `${course.progress}%` }}></div>
                 </div>
               </div>
              
