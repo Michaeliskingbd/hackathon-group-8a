@@ -4,7 +4,7 @@ import MainHome from "../components/MainHome";
 import SubMain from "../components/SubMain";
 import Sub2 from "../components/Sub2";
 import AddMain from "../components/AddMain";
-import HackFooter from "../Components/HackFooter";
+import HackFooter from "../components/HackFooter";
 
 const Home = () => {
   return (

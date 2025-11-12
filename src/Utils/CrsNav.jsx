@@ -14,11 +14,11 @@ const CrsNav = () => {
           />
         </div>
         <div className="flex gap-[360px] text-orange-400 font-bold text-xs">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 hover:cursor-pointer">
             <FaLessThan />
             <p>Previous Lesson</p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 hover:cursor-pointer">
             <p>Next Topic</p>
             <FaGreaterThan />
           </div>

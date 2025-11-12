@@ -17,7 +17,7 @@ import { RxHamburgerMenu, RxTriangleDown } from "react-icons/rx";
 import { VscTriangleDown } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
-const CrsExtend = () => {
+const Csec4 = () => {
   const [showSideMenu, setShowSideMenu] = useState(false);
   const sideMenu = () => {
     setShowSideMenu(!showSideMenu);
@@ -35,7 +35,7 @@ const CrsExtend = () => {
 
   const subTopics = [
     {
-      mainT: " Introduction to HTML",
+      mainT: " Introduction to Cybersecurity and its importance",
     },
   ];
 
@@ -66,28 +66,28 @@ const CrsExtend = () => {
             <div className="flex items-center gap-2 px-5 py-5 text-white bg-orange-300 relative">
               <RiFileListLine className="text-xl" />
               <h4 className="text-lg font-bold hover:cursor-pointer">
-                HTML5/CSS3 Essentials
+                Cybersecurity Essentials
               </h4>
             </div>
             {subTopics.map((p, index) => (
-              <div key={index} className="px-5 py-4 text-orange-300 space-y-2">
+              <div key={index} className="px-5 py-4 space-y-2">
                 <div className="flex items-center gap-2">
-                  <FaRegCircle className="text-lg" />
-                  <p className="font-bold text-base hover:cursor-pointer">
+                  <FaRegCircle className="text-[#c0c0c1]" />
+                  <p className="font-thin text-[12px] hover:cursor-pointer hover:text-orange-300">
                     {p.mainT}
                   </p>
                 </div>
 
                 <div onClick={topics}>
                   {showTopics ? (
-                    <div className="flex items-center gap-1 px-4">
+                    <div className="flex items-center gap-1 px-4 text-orange-300">
                       <IoIosArrowDropupCircle className="text-xl" />
                       <span className="font-bold text-sm hover:cursor-pointer">
                         2 Topics
                       </span>
                     </div>
                   ) : (
-                    <div className="flex items-center gap-1 px-4">
+                    <div className="flex items-center gap-1 px-4 text-orange-300">
                       <IoIosArrowDropdownCircle className="text-xl" />
                       <span className="font-bold text-sm hover:cursor-pointer">
                         2 Topics
@@ -105,8 +105,8 @@ const CrsExtend = () => {
                 <Link to="/Ext">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                    <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      HTML Elements
+                    <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
+                      Types of Cyber Threats and Attacks
                     </p>
                   </div>
                 </Link>
@@ -114,18 +114,18 @@ const CrsExtend = () => {
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      HTML Attributes
+                      Fundamentals of Networking and Security Protocols
                     </p>
                   </div>
                 </Link>
               </div>
             )}
 
-            <div className="px-5 py-4 space-y-2 border-b-[1px] border-t-[1px]">
+            <div className="px-5 py-4 space-y-2 text-orange-300 border-b-[1px] border-t-[1px]">
               <div className="flex items-center gap-2">
-                <FaRegCircle className="text-[#c0c0c1]" />
-                <p className="text-base font-thin hover:cursor-pointer hover:text-orange-300">
-                  Introduction and Basics of CSS
+                <FaRegCircle className="text-lg" />
+                <p className="text-[14px] font-bold hover:cursor-pointer">
+                  Authentication, Authorization, and Encryption
                 </p>
               </div>
               <div onClick={topicsL2}>
@@ -155,15 +155,15 @@ const CrsExtend = () => {
                 <Link to="/Atag">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                    <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      Anatomy of tags
+                    <p className="font-thin text-[12px] hover:cursor-pointer hover:text-orange-300">
+                      Firewalls, VPNs, and Intrusion Detection Systems
                     </p>
                   </div>
                 </Link>
                 <div className="flex items-center gap-1">
                   <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                  <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                    Selectors in CSS
+                  <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
+                    Cybersecurity Policies and Risk Management
                   </p>
                 </div>
               </div>
@@ -195,23 +195,23 @@ const CrsExtend = () => {
 
         <div className="lg:px-14 px-4 lg:py-7 lg:flex-[70%] w-">
           <h1 className="font-bold lg:text-[70px] text-[40px] pb-10">
-            HTML Elements
+            Cybersecurity Policies and Risk Management
           </h1>
           <div className="flex items-center gap-1 px-2 py-2 bg-[#ecf0f2] rounded-lg">
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              HTML5/CSS3 Essentials
+              Cybersecurity Essentials
             </span>
             <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              Introduction to HTML
+              Introduction to Cybersecurity and its importance
             </span>
             <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              HTML Elements
+              Cybersecurity Policies and Risk Management
             </span>
           </div>
 
@@ -247,4 +247,4 @@ const CrsExtend = () => {
   );
 };
 
-export default CrsExtend;
+export default Csec4;

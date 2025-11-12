@@ -17,7 +17,7 @@ import { RxHamburgerMenu, RxTriangleDown } from "react-icons/rx";
 import { VscTriangleDown } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
-const CrsExtend = () => {
+const UiuxExt = () => {
   const [showSideMenu, setShowSideMenu] = useState(false);
   const sideMenu = () => {
     setShowSideMenu(!showSideMenu);
@@ -35,7 +35,7 @@ const CrsExtend = () => {
 
   const subTopics = [
     {
-      mainT: " Introduction to HTML",
+      mainT: "Introduction to UI/UX Design",
     },
   ];
 
@@ -66,7 +66,7 @@ const CrsExtend = () => {
             <div className="flex items-center gap-2 px-5 py-5 text-white bg-orange-300 relative">
               <RiFileListLine className="text-xl" />
               <h4 className="text-lg font-bold hover:cursor-pointer">
-                HTML5/CSS3 Essentials
+                UI/UX Design Fundamentals
               </h4>
             </div>
             {subTopics.map((p, index) => (
@@ -106,7 +106,7 @@ const CrsExtend = () => {
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      HTML Elements
+                      Understanding Users and Design Thinking
                     </p>
                   </div>
                 </Link>
@@ -114,7 +114,7 @@ const CrsExtend = () => {
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      HTML Attributes
+                      Information Architecture and User Flows
                     </p>
                   </div>
                 </Link>
@@ -125,7 +125,7 @@ const CrsExtend = () => {
               <div className="flex items-center gap-2">
                 <FaRegCircle className="text-[#c0c0c1]" />
                 <p className="text-base font-thin hover:cursor-pointer hover:text-orange-300">
-                  Introduction and Basics of CSS
+                  Wireframing and Low-Fidelity Prototyping
                 </p>
               </div>
               <div onClick={topicsL2}>
@@ -156,14 +156,14 @@ const CrsExtend = () => {
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      Anatomy of tags
+                      Visual Design Principles
                     </p>
                   </div>
                 </Link>
                 <div className="flex items-center gap-1">
                   <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                   <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                    Selectors in CSS
+                    Building Interactive Prototypes
                   </p>
                 </div>
               </div>
@@ -194,24 +194,24 @@ const CrsExtend = () => {
         )}
 
         <div className="lg:px-14 px-4 lg:py-7 lg:flex-[70%] w-">
-          <h1 className="font-bold lg:text-[70px] text-[40px] pb-10">
-            HTML Elements
+          <h1 className="font-bold lg:text-[50px] text-[40px] pb-10">
+            Understanding Users and Design Thinking
           </h1>
           <div className="flex items-center gap-1 px-2 py-2 bg-[#ecf0f2] rounded-lg">
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              HTML5/CSS3 Essentials
+              UI/UX Design Fundamentals
             </span>
             <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              Introduction to HTML
+              Introduction to UI/UX Design
             </span>
             <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              HTML Elements
+              Understanding Users and Design Thinking
             </span>
           </div>
 
@@ -247,4 +247,4 @@ const CrsExtend = () => {
   );
 };
 
-export default CrsExtend;
+export default UiuxExt;
