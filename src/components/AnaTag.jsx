@@ -17,7 +17,7 @@ import { RxHamburgerMenu, RxTriangleDown } from "react-icons/rx";
 import { VscTriangleDown } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
-const CrsExtend = () => {
+const AnaTag = () => {
   const [showSideMenu, setShowSideMenu] = useState(false);
   const sideMenu = () => {
     setShowSideMenu(!showSideMenu);
@@ -70,24 +70,24 @@ const CrsExtend = () => {
               </h4>
             </div>
             {subTopics.map((p, index) => (
-              <div key={index} className="px-5 py-4 text-orange-300 space-y-2">
+              <div key={index} className="px-5 py-4 space-y-2">
                 <div className="flex items-center gap-2">
-                  <FaRegCircle className="text-lg" />
-                  <p className="font-bold text-base hover:cursor-pointer">
+                  <FaRegCircle className="text-[#c0c0c1]" />
+                  <p className="font-thin text-base hover:cursor-pointer hover:text-orange-300">
                     {p.mainT}
                   </p>
                 </div>
 
                 <div onClick={topics}>
                   {showTopics ? (
-                    <div className="flex items-center gap-1 px-4">
+                    <div className="flex items-center gap-1 px-4 text-orange-300">
                       <IoIosArrowDropupCircle className="text-xl" />
                       <span className="font-bold text-sm hover:cursor-pointer">
                         2 Topics
                       </span>
                     </div>
                   ) : (
-                    <div className="flex items-center gap-1 px-4">
+                    <div className="flex items-center gap-1 px-4 text-orange-300">
                       <IoIosArrowDropdownCircle className="text-xl" />
                       <span className="font-bold text-sm hover:cursor-pointer">
                         2 Topics
@@ -105,7 +105,7 @@ const CrsExtend = () => {
                 <Link to="/Ext">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                    <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
+                    <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
                       HTML Elements
                     </p>
                   </div>
@@ -121,10 +121,10 @@ const CrsExtend = () => {
               </div>
             )}
 
-            <div className="px-5 py-4 space-y-2 border-b-[1px] border-t-[1px]">
+            <div className="px-5 py-4 space-y-2 text-orange-300 border-b-[1px] border-t-[1px]">
               <div className="flex items-center gap-2">
-                <FaRegCircle className="text-[#c0c0c1]" />
-                <p className="text-base font-thin hover:cursor-pointer hover:text-orange-300">
+                <FaRegCircle className="text-lg" />
+                <p className="text-base font-bold hover:cursor-pointer">
                   Introduction and Basics of CSS
                 </p>
               </div>
@@ -152,20 +152,20 @@ const CrsExtend = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <Link to="/Atag">
+                <div className="flex items-center gap-1">
+                  <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
+                  <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
+                    Anatomy of tags
+                  </p>
+                </div>
+                <Link to="/SelCss">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      Anatomy of tags
+                      Selectors in CSS
                     </p>
                   </div>
                 </Link>
-                <div className="flex items-center gap-1">
-                  <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                  <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                    Selectors in CSS
-                  </p>
-                </div>
               </div>
             )}
           </div>
@@ -195,7 +195,7 @@ const CrsExtend = () => {
 
         <div className="lg:px-14 px-4 lg:py-7 lg:flex-[70%] w-">
           <h1 className="font-bold lg:text-[70px] text-[40px] pb-10">
-            HTML Elements
+            Anatomy of Tags
           </h1>
           <div className="flex items-center gap-1 px-2 py-2 bg-[#ecf0f2] rounded-lg">
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
@@ -205,13 +205,13 @@ const CrsExtend = () => {
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              Introduction to HTML
+              Introduction and Basics of CSS
             </span>
             <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              HTML Elements
+              Anatomy of Tags
             </span>
           </div>
 
@@ -247,4 +247,4 @@ const CrsExtend = () => {
   );
 };
 
-export default CrsExtend;
+export default AnaTag;

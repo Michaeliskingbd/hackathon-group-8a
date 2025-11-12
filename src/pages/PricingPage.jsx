@@ -1,6 +1,7 @@
 import React from "react";
 import Membership from "../components/membership";
 import FaqItem from "../components/FaqItem";
+import HackFooter from "../components/HackFooter";
 
 const PricingPage = () => {
   return (
@@ -8,6 +9,7 @@ const PricingPage = () => {
       <div className="bg-slate-100">
         <Membership />
         <FaqItem />
+        <HackFooter />
       </div>
     </>
   );

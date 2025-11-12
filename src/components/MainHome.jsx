@@ -61,7 +61,10 @@ const MainHome = () => {
           <div className="flex">
             <h3 className="text-white z-10 font-bold text-[70px] leading-[1.2] ">
               <Typewriter
-                words={["Education Opens up the Mind"]}
+                words={[
+                  "Education Opens up the Mind",
+                  "Shaping thinkers, creators, and future leaders",
+                ]}
                 loop={0}
                 cursor
                 cursorStyle="|"

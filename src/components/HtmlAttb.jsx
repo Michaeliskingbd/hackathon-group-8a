@@ -17,7 +17,7 @@ import { RxHamburgerMenu, RxTriangleDown } from "react-icons/rx";
 import { VscTriangleDown } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
-const CrsExtend = () => {
+const HtmlAttb = () => {
   const [showSideMenu, setShowSideMenu] = useState(false);
   const sideMenu = () => {
     setShowSideMenu(!showSideMenu);
@@ -105,7 +105,7 @@ const CrsExtend = () => {
                 <Link to="/Ext">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                    <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
+                    <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
                       HTML Elements
                     </p>
                   </div>
@@ -113,7 +113,7 @@ const CrsExtend = () => {
                 <Link to="/Hattb">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                    <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
+                    <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
                       HTML Attributes
                     </p>
                   </div>
@@ -160,12 +160,14 @@ const CrsExtend = () => {
                     </p>
                   </div>
                 </Link>
-                <div className="flex items-center gap-1">
-                  <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                  <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                    Selectors in CSS
-                  </p>
-                </div>
+                <Link to="/SelCss">
+                  <div className="flex items-center gap-1">
+                    <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
+                    <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
+                      Selectors in CSS
+                    </p>
+                  </div>
+                </Link>
               </div>
             )}
           </div>
@@ -195,7 +197,7 @@ const CrsExtend = () => {
 
         <div className="lg:px-14 px-4 lg:py-7 lg:flex-[70%] w-">
           <h1 className="font-bold lg:text-[70px] text-[40px] pb-10">
-            HTML Elements
+            HTML Attributes
           </h1>
           <div className="flex items-center gap-1 px-2 py-2 bg-[#ecf0f2] rounded-lg">
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
@@ -211,7 +213,7 @@ const CrsExtend = () => {
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              HTML Elements
+              HTML Attributes
             </span>
           </div>
 
@@ -247,4 +249,4 @@ const CrsExtend = () => {
   );
 };
 
-export default CrsExtend;
+export default HtmlAttb;

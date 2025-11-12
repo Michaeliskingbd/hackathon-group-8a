@@ -4,6 +4,8 @@ import images1 from "../assets/img1.jpeg";
 import images2 from "../assets/img2.jpeg";
 import images3 from "../assets/img3.jpeg";
 import images4 from "../assets/img4.jpeg";
+import CountUp from "react-countup";
+import { Rate } from "antd";
 
 const AddMain = () => {
   return (
@@ -18,16 +20,22 @@ const AddMain = () => {
 
         <div className="flex-1">
           <div className="flex lg:items-center lg:justify-center gap-4">
-            <h1 className="font-bold text-8xl">4.8</h1>
+            <h1 className="font-bold text-8xl">
+              <CountUp
+                start={0.0}
+                end={4.8}
+                duration={10}
+                decimals={2}
+              ></CountUp>
+            </h1>
             <div className="flex flex-col space-y-2">
               <span className="flex text-orange-400 gap-2 text-xs">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
+                <Rate allowHalf defaultValue={4.5} />
               </span>
-              <h4 className="font-semibold text-lg">2,394 Ratings</h4>
+              <h4 className="font-semibold text-lg">
+                <CountUp start={2394} end={5000} duration={1000}></CountUp>
+                Ratings
+              </h4>
               <h5 className="font-semibold text-lg">Google Reviews</h5>
             </div>
           </div>
