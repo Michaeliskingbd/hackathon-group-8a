@@ -17,6 +17,7 @@ import Csec from "./Components/Csec";
 import Csec4 from "./Components/Csec4";
 import Csec3 from "./Components/Csec3";
 import Csec2 from "./Components/Csec2";
+import PricingPage from "./pages/PricingPage";
 
 const App = () => {
   return (
