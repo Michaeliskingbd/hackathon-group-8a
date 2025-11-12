@@ -10,8 +10,8 @@ const CardSection = ({img, course, name, about, contact}) => {
   }, []);
   return (
     <article data-aos="fade-up" data-aos-duration="2000">
-      <div className='border-2 border-y-gray-300 rounded-2xl w-[320px] h-[400px] '> 
-      <img className='rounded-2xl w-[400px] h-[200px]' src={img} alt="" />
+      <div className='border-2 border-y-gray-300 rounded-2xl w-[320px]  '> 
+      <img className='rounded-2xl w-[400px] ' src={img} alt="" />
       <div className='p-4 space-y-2'>
       <h2 className='font-semibold'>{course}</h2>
       <h1 className='font-semibold text-2xl'>{name}</h1>
