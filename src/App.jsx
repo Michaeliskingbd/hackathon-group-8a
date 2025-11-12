@@ -32,6 +32,7 @@ import Csec4 from "./Components/Csec4";
 import Csec3 from "./Components/Csec3";
 import Csec2 from "./Components/Csec2";
 import Instructors from "./pages/Instructors";
+import PricingPage from "./pages/PricingPage";
 
 const App = () => {
   return (
@@ -41,7 +42,7 @@ const App = () => {
       <Route path="/instructors" element={<Instructors />} />
       {/*  <Route path="/aboutPage" elements={<About />} /> */}
       <Route path="/All" element={<AllCou />} />
-      {/* <Route path="/pricingPage" element={<PricingPage />} /> */}
+      <Route path="/pricingPage" element={<PricingPage />} />
       <Route path="/Cou2" element={<Courses2A />} />
       <Route path="/Cou3" element={<Courses3A />} />
       //Extended pages
