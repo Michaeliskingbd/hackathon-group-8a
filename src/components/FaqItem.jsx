@@ -29,7 +29,7 @@ const FaqItem = () => {
 
   return (
     <>
-      <section className="flex gap-24">
+      <section className="flex gap-24 mb-10">
         <div className="mt-36 px-8">
           <p className="text-black font-bold text-l mb-3">
             Have Any Questions?
@@ -68,7 +68,7 @@ const FaqItem = () => {
           })}
         </div>
       </section>
-      <section className="mb-10 mt-36 text-center">
+      {/* <section className="mb-10 mt-36 text-center">
         <h1 className="text-5xl text-black font-bold mb-6">
           Join Our Community
         </h1>
@@ -86,7 +86,7 @@ const FaqItem = () => {
             Subscribe
           </button>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
