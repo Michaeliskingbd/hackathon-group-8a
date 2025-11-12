@@ -1,5 +1,9 @@
 import React from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
+import images1 from "../assets/img1.jpeg";
+import images2 from "../assets/img2.jpeg";
+import images3 from "../assets/img3.jpeg";
+import images4 from "../assets/img4.jpeg";
 
 const AddMain = () => {
   return (
@@ -49,9 +53,10 @@ const AddMain = () => {
 
             <div className="absolute top-[-70px]">
               <img
-                src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-01.jpg"
+                src={images1}
+                //"https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-01.jpg"
                 alt=""
-                className="rounded-xl"
+                className="rounded-xl w-20 h-20"
               />
             </div>
           </div>
@@ -73,9 +78,10 @@ const AddMain = () => {
 
             <div className="absolute top-[-70px]">
               <img
-                src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-02.jpg"
+                src={images2}
+                //"https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-02.jpg"
                 alt=""
-                className="rounded-xl"
+                className="rounded-xl w-20 h-20"
               />
             </div>
           </div>
@@ -97,9 +103,10 @@ const AddMain = () => {
 
             <div className="absolute top-[-70px]">
               <img
-                src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-03.jpg"
+                src={images3}
+                //"https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-03.jpg"
                 alt=""
-                className="rounded-xl"
+                className="rounded-xl w-20 h-20"
               />
             </div>
           </div>
@@ -121,9 +128,10 @@ const AddMain = () => {
 
             <div className="absolute top-[-70px]">
               <img
-                src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-04.jpg"
+                src={images4}
+                //"https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/online-programming-course-review-04.jpg"
                 alt=""
-                className="rounded-xl"
+                className="rounded-xl w-20 h-20"
               />
             </div>
           </div>

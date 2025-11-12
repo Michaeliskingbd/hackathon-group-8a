@@ -10,11 +10,11 @@ const Hiro = () => {
             </div>
             <div className='border-l-2 border-orange-400  '>
             
-                <p className='   lg:pl-11 pl-8 lg:mt-0 mt-6 lg:text-[15px] lg:pt-8 text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur in totam accusantium culpa earum quisquam ducimus doloribus itaque? Beatae unde amet vero. Cumque ea nesciunt quidem? Culpa itaque voluptas minus.</p>
+                <p className='   lg:pl-11 pl-8 lg:mt-0 mt-6 lg:text-[15px] lg:pt-8 text-sm'>Our Instructor team is united by a single, bold vision: to make high quality, real-world learning accessible to anyone.</p>
             </div>
         </div>
     </section>
   )
 }
 
-export default Hiro
+export default Hiro;

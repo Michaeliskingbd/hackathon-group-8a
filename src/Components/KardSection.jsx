@@ -1,51 +1,57 @@
 import React from 'react'
 import CardSection from './CardSection';
+import logo from '../assets/image.jpg'
+import image from '../assets/girl.jpg'
+import img from '../assets/logo.jpg'
+import pic from '../assets/backImg.jpg'
+import picture from '../assets/picture.jpg'
+import pics from '../assets/photo.jpg'
 
 const KardSection = () => {
   return (
     <section className='bg-gray-200 lg:pt-0 pt-32'>
         <div className=' grid lg:grid-cols-3 gap-5 grid-cols-1 lg:mx-28 mx-4 md:grid-cols-2'>
         <CardSection
-        img="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2021/03/instructor-02-free-img.jpg" 
-        course="HTML5/CSS3 instructor"
-        name="MRS. Deborah Holmes"
-        about="Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat voluptas"
-        contact="View profile" />
+        img={logo} 
+        course="HTML5/CSS3 Instructor"
+        name="Boyedeola Ogunrinde"
+        about="A front-end specialist with 8 years experience in building responsive, accessible websites for agencies and startups." />
+        
 
         <CardSection  
-        img="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/instructor-04-free-img.jpg"
-        course="Digital Marketing" 
-        name="Bruce Stevens"
-        about="Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat voluptas."
-        contact="View Profile" />
+        img={image}
+        course="Digital Marketing Instructors" 
+        name="Omolola Alabi"
+        about="Lola is a data-driven marketer with dexterity spanning SEO, paid social and conversion-rate optimization."
+        />
 
         <CardSection 
-        img="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/instructor-03-free-img.jpg"
-        course="WordPress"
-        name="Michelle Baker"
-        about="Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat voluptas."
-        contact="View Profile"/>
+        img={img}
+        course="WordPress Instrutors"
+        name="Fadahunsi John"
+        about="Meet our wordpress developer with hands-on experience in building custom themes for plugins, e-commerce solutions for agencies and small businesses."
+       />
 
         <CardSection 
-        img="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/instructor-05-free-img.jpg"
-        course="JavaScript"
-        name="Paul Santos"
-        about="Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat voluptas."
-        contact="View Profile"/>
+        img={pic}
+        course="JavaScript Development Instructors"
+        name="Amofe Emmanuel"
+        about="Meet our js instructor, with 6 years solid experience. He's a certified Node.js developer and multiple contributions to open-source projects and scalable web applications."
+       />
 
         <CardSection 
-        img="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/03/instructor-01-free-img.jpg"
-        course="UI/UX"
-        name="Dana Caroll"
-        about="Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat voluptas."
-        contact="View Profile"/>
+        img={picture}
+        course="UI/UX Instructors"
+        name="Sulaimon Faishat"
+        about="Faishat is a seasoned UI/UX designer with 5 years of experience. Her teaching sytles blends real-world case studies with hands-on design flair. "
+       />
 
         <CardSection 
-        img="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/03/instructor-06-free-img.jpg"
-        course="Backend"
-        name="Scott Valdes"
-        about="Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat voluptas."
-        contact="View Profile"/>
+        img={pics}
+        course="Cybersecurity Instructors"
+        name="Olamide Adegboyega"
+        about="Olamide is a certified ethical hacker and security analyst with years of experience in protecting enterprise networks and cloud networks."
+       />
 
     </div>
     </section>

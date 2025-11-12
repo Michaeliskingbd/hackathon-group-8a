@@ -5,7 +5,7 @@ import { PiGreaterThanLight, PiLessThanLight } from "react-icons/pi";
 const CrsNav = () => {
   return (
     <section>
-      <nav className="border-b-[1px] flex items-center gap-96">
+      <nav className="border-b-[1px] lg:flex items-center gap-[370px] hidden">
         <div>
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/logo-retina.png"
