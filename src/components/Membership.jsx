@@ -1,18 +1,21 @@
-import React from 'react'
-import Card from '../utils/Card';
+import React from "react";
+import Card from "../utils/Card";
+import Nav from "../utils/Nav";
 
 const Membership = () => {
-   const memberships = [
+  const memberships = [
     {
       title: "Monthly",
       price: 49,
       duration: "Month",
-      features: ["Course Learning Checks", 
-                 "Course Discussion",
-                 "Excercise Files",
-                 "Offline Viewing",
-                  "Full Lifetime Access",
-                "Certificate of Completion"],
+      features: [
+        "Course Learning Checks",
+        "Course Discussion",
+        "Excercise Files",
+        "Offline Viewing",
+        "Full Lifetime Access",
+        "Certificate of Completion",
+      ],
       buttonText: "Purchase",
       textColor: "text-black",
       bgColor: "bg-white",
@@ -21,61 +24,71 @@ const Membership = () => {
       title: "Annual",
       price: 485,
       duration: "Year",
-      features: ["Course Learning Checks", 
-                 "Course Discussion",
-                 "Excercise Files",
-                 "Offline Viewing",
-                  "Certificate of Completion",
-                  "Full Lifetime Access",
-               ],
+      features: [
+        "Course Learning Checks",
+        "Course Discussion",
+        "Excercise Files",
+        "Offline Viewing",
+        "Certificate of Completion",
+        "Full Lifetime Access",
+      ],
       textColor: "text-white",
       buttonText: "Purchase",
-      bgColor: "bg-cyan-700"
+      bgColor: "bg-cyan-700",
     },
     {
       title: "Extended",
       price: 99,
       duration: "Month",
-      features: ["Course Learning Checks", 
-                 "Course Discussion",
-                 "Excercise Files",
-                 "Offline Viewing",
-                  "Full Lifetime Access",
-                "Certificate of Completion"],
+      features: [
+        "Course Learning Checks",
+        "Course Discussion",
+        "Excercise Files",
+        "Offline Viewing",
+        "Full Lifetime Access",
+        "Certificate of Completion",
+      ],
       buttonText: "Purchase",
       bgColor: "bg-white",
     },
   ];
 
   return (
-    <section className='bg-slate-100'> 
-    <div className='bg-cover bg-center bg-[url(https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-05-free-img.jpg)] rounded-br-[100px]'>
-     <div className='bg-cyan-700/85 text-white py-32 px-8 rounded-br-[100px]'>
-        <h1 className='text-7xl font-bold mb-8'>Pricing & FAQ</h1>
-      <p className='text-sm '>Choose the perfect learning plan for your goals. Flexible pricing options with unlimited access to<br/>
-          our courses and expert instructors.</p>
+    <section className="bg-slate-100">
+      <div className="bg-cover bg-center bg-[url(https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-05-free-img.jpg)] rounded-br-[100px]">
+        <div className="bg-cyan-700/85 text-white pb-32  rounded-br-[100px]">
+          <Nav />
+          <h1 className="text-7xl font-bold mb-8 px-8">Pricing & FAQ</h1>
+          <p className="text-sm px-8">
+            Choose the perfect learning plan for your goals. Flexible pricing
+            options with unlimited access to
+            <br />
+            our courses and expert instructors.
+          </p>
+        </div>
       </div>
-    </div>
-      
-    
-  <div className='flex mt-20 justify-between text-black px-10'>
-    <div>
-    <h4 className='text-sm font-bold mb-5'>Become a member</h4>
-    <h2 className='text-4xl font-bold'>Membership</h2>
-    </div>
-    <ul className='text-orange-500 font-bold leading-none ml-32'>
-      <li>|</li>
-       <li>|</li>
-        <li>|</li>
-         <li>|</li>
-          <li>|</li>
-          <li>|</li>
-    </ul>
-    <p className='mt-5'>Select a plan that fits your learning journey. All plans include lifetime access to purchased courses,
-       <br/> downloadable resources, and certificates of completion.</p>
-  </div>
 
-   <div className='max-w-6xl mx-auto grid md:grid-cols-3 gap-8'>
+      <div className="flex mt-20 justify-between text-black px-10">
+        <div>
+          <h4 className="text-sm font-bold mb-5">Become a member</h4>
+          <h2 className="text-4xl font-bold">Membership</h2>
+        </div>
+        <ul className="text-orange-500 font-bold leading-none ml-32">
+          <li>|</li>
+          <li>|</li>
+          <li>|</li>
+          <li>|</li>
+          <li>|</li>
+          <li>|</li>
+        </ul>
+        <p className="mt-5">
+          Select a plan that fits your learning journey. All plans include
+          lifetime access to purchased courses,
+          <br /> downloadable resources, and certificates of completion.
+        </p>
+      </div>
+
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         {memberships.map((plan, index) => (
           <Card
             key={index}
@@ -90,9 +103,7 @@ const Membership = () => {
         ))}
       </div>
     </section>
-
-  
-  )
-}
+  );
+};
 
 export default Membership;

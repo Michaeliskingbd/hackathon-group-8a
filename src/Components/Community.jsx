@@ -7,7 +7,7 @@ const Community = () => {
         <span>Enter your email address to register to our newsletter subscription delivered on regular basis!</span>
        <div className='lg:flex space-y-3 gap-6'>
         <input className='w-[350px] h-[48px] indent-3' type="email" placeholder='Enter your email' />
-       <button className='w-[180px] bg-orange-400 rounded-3xl text-white font-bold'>SUBSCRIBE</button>
+       <button className='lg:w-[180px] w-[100%] bg-orange-400 rounded-3xl text-white font-bold md:w-[80%]'>SUBSCRIBE</button>
        </div>
 
     </section>
