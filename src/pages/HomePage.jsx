@@ -6,7 +6,7 @@ import Sub2 from "../components/Sub2";
 import AddMain from "../components/AddMain";
 import HackFooter from "../components/HackFooter";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="selection:bg-orange-400 selection:text-black w-fit lg:w-full">
       <MainHome />
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

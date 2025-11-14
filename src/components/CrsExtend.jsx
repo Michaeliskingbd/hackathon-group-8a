@@ -73,9 +73,11 @@ const CrsExtend = () => {
               <div key={index} className="px-5 py-4 text-orange-300 space-y-2">
                 <div className="flex items-center gap-2">
                   <FaRegCircle className="text-lg" />
-                  <p className="font-bold text-base hover:cursor-pointer">
-                    {p.mainT}
-                  </p>
+                  <Link to="/ItHtml">
+                    <p className="font-bold text-base hover:cursor-pointer">
+                      {p.mainT}
+                    </p>
+                  </Link>
                 </div>
 
                 <div onClick={topics}>
@@ -231,15 +233,19 @@ const CrsExtend = () => {
           </div>
 
           <div className="flex items-center justify-between mt-7 py-7 border-t-2">
-            <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-              <PiLessThanBold className="text-[10px] font-bold" />
-              <span className="text-sm font-bold">Previous Lesson</span>
-            </button>
+            <Link to="/ItHtml">
+              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
+                <PiLessThanBold className="text-[10px] font-bold" />
+                <span className="text-sm font-bold">Previous Lesson</span>
+              </button>
+            </Link>
 
-            <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-              <span className="text-sm font-bold">Next Topic</span>
-              <PiGreaterThanBold className="text-[10px]" />
-            </button>
+            <Link to="/Hattb">
+              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
+                <span className="text-sm font-bold">Next Topic</span>
+                <PiGreaterThanBold className="text-[10px]" />
+              </button>
+            </Link>
           </div>
         </div>
       </article>

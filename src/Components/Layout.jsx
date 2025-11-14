@@ -2,15 +2,15 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import { Menu } from "lucide-react";
-import Sidebar from "./Sidebar";
+import SideBar from "./SideBar";
 
 function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen bg-gray-50 relative">
+    <div className="flex h-screen bg-gray-50 relative">
       {/* Sidebar */}
-      <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+      <SideBar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
       {/* Main content */}
       <main className="flex-1 p-6 w-full">

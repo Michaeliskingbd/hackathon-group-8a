@@ -3,14 +3,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const Instruct = () => {
+const GetInTouch = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <section className="bg-gray-200">
       <div className="relative bg-[url(https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-04-free-img.jpg)] h-[420px] lg:bg-center bg-cover rounded-br-[200px]  ">
         <div className="absolute inset-0 bg-[#007991] opacity-80 rounded-br-[200px] "></div>
-
         <nav className="flex justify-between p-6 items-center">
           <div className="lg: z-50 pl-0 ">
             <img
@@ -36,7 +34,7 @@ const Instruct = () => {
               <Link to="/pricingPage">
                 <li>Prices & FAQ</li>
               </Link>
-              <Link to="/contact">
+              <Link to="/Contact">
                 <li>Contact</li>
               </Link>
             </ul>
@@ -85,7 +83,7 @@ const Instruct = () => {
 
         <div className="lg:m-16 m-0 lg:pl-20 pl-7 lg:pt:0 pt-11 flex flex-col gap-5 z-50">
           <h1 className="font-bold lg:text-8xl text-2xl text-white z-50">
-            Instructors
+            Get in Touch
           </h1>
           <p className="text-white lg:w-[500px] w-68 z-50 ">
             At the heart of our e-learning platform is a group of passionate
@@ -98,4 +96,4 @@ const Instruct = () => {
   );
 };
 
-export default Instruct;
+export default GetInTouch;

@@ -16,11 +16,13 @@ const AllCrsMs = () => {
             in today's digital world.
           </p>
         </div>
-        <div className="flex-[20%]">
-          <button className="bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] text-white px-6 py-2 rounded-3xl">
-            VIEW PROGRESS
-          </button>
-        </div>
+        <Link to="/dashboard">
+          <div className="flex-[20%]">
+            <button className="bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] text-white px-6 py-2 rounded-3xl">
+              VIEW PROGRESS
+            </button>
+          </div>
+        </Link>
       </article>
 
       <article className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit lg:mr-10">

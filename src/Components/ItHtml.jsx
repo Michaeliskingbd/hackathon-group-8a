@@ -16,8 +16,9 @@ import {
 import { RxHamburgerMenu, RxTriangleDown } from "react-icons/rx";
 import { VscTriangleDown } from "react-icons/vsc";
 import { Link } from "react-router-dom";
+import { FaPlay } from "react-icons/fa6";
 
-const Csec4 = () => {
+const ItHtml = () => {
   const [showSideMenu, setShowSideMenu] = useState(false);
   const sideMenu = () => {
     setShowSideMenu(!showSideMenu);
@@ -35,7 +36,7 @@ const Csec4 = () => {
 
   const subTopics = [
     {
-      mainT: " Introduction to Cybersecurity and its importance",
+      mainT: " Introduction to HTML",
     },
   ];
 
@@ -66,30 +67,30 @@ const Csec4 = () => {
             <div className="flex items-center gap-2 px-5 py-5 text-white bg-orange-300 relative">
               <RiFileListLine className="text-xl" />
               <h4 className="text-lg font-bold hover:cursor-pointer">
-                Cybersecurity Essentials
+                HTML5/CSS3 Essentials
               </h4>
             </div>
             {subTopics.map((p, index) => (
-              <div key={index} className="px-5 py-4 space-y-2">
-                <Link to="/ItCsec">
-                  <div className="flex items-center gap-2">
-                    <FaRegCircle className="text-[#c0c0c1]" />
-                    <p className="font-thin text-[12px] hover:cursor-pointer hover:text-orange-300">
+              <div key={index} className="px-5 py-4 text-orange-300 space-y-2">
+                <div className="flex items-center gap-2">
+                  <FaRegCircle className="text-lg" />
+                  <Link to="ItHtml">
+                    <p className="font-bold text-base hover:cursor-pointer">
                       {p.mainT}
                     </p>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
 
                 <div onClick={topics}>
                   {showTopics ? (
-                    <div className="flex items-center gap-1 px-4 text-orange-300">
+                    <div className="flex items-center gap-1 px-4">
                       <IoIosArrowDropupCircle className="text-xl" />
                       <span className="font-bold text-sm hover:cursor-pointer">
                         2 Topics
                       </span>
                     </div>
                   ) : (
-                    <div className="flex items-center gap-1 px-4 text-orange-300">
+                    <div className="flex items-center gap-1 px-4">
                       <IoIosArrowDropdownCircle className="text-xl" />
                       <span className="font-bold text-sm hover:cursor-pointer">
                         2 Topics
@@ -104,34 +105,34 @@ const Csec4 = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <Link to="/Csec">
+                <Link to="/Ext">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      Types of Cyber Threats and Attacks
+                      HTML Elements
                     </p>
                   </div>
                 </Link>
-                <Link to="/Csec2">
+                <Link to="/Hattb">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      Fundamentals of Networking and Security Protocols
+                      HTML Attributes
                     </p>
                   </div>
                 </Link>
               </div>
             )}
 
-            <div className="px-5 py-4 space-y-2 text-orange-300 border-b-[1px] border-t-[1px]">
-              <Link to="/ItCsec2">
-                <div className="flex items-center gap-2">
-                  <FaRegCircle className="text-lg" />
-                  <p className="text-[14px] font-bold hover:cursor-pointer">
-                    Authentication, Authorization, and Encryption
+            <div className="px-5 py-4 space-y-2 border-b-[1px] border-t-[1px]">
+              <div className="flex items-center gap-2">
+                <Link to="/ItCss">
+                  <FaRegCircle className="text-[#c0c0c1]" />
+                  <p className="text-base font-thin hover:cursor-pointer hover:text-orange-300">
+                    Introduction and Basics of CSS
                   </p>
-                </div>
-              </Link>
+                </Link>
+              </div>
               <div onClick={topicsL2}>
                 {showTopicsL2 ? (
                   <div className="flex items-center gap-1 px-4 text-orange-300">
@@ -156,43 +157,41 @@ const Csec4 = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <Link to="/Csec3">
+                <Link to="/Atag">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                    <p className="font-thin text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      Firewalls, VPNs, and Intrusion Detection Systems
+                    <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
+                      Anatomy of tags
                     </p>
                   </div>
                 </Link>
-                <Link to="/Csec4">
-                  <div className="flex items-center gap-1">
-                    <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                    <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
-                      Cybersecurity Policies and Risk Management
-                    </p>
-                  </div>
-                </Link>
+                <div className="flex items-center gap-1">
+                  <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
+                  <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
+                    Selectors in CSS
+                  </p>
+                </div>
               </div>
             )}
           </div>
         ) : (
           <div>
-            <div className=" hidden lg:block border-r-[1px] h-[87vh]">
+            <div className=" hidden lg:block border-r-[1px] h-[200vh]">
               <div className=" bg-orange-300 text-white py-7">
                 <div className="w-[60px]"></div>
               </div>
             </div>
             <div className="flex lg:hidden gap-[50px] py-10 px-4 text-orange-400 font-bold text-xs">
-              <div className="border-[1px] py-4 px-5 items-center ">
+              {/* <div className="border-[1px] py-4 px-5 items-center ">
                 <button className="flex gap-3 items-center">
                   <FaLessThan />
                   Previous Lesson
                 </button>
-              </div>
+              </div> */}
               <div className="border-[1px] py-4 px-5 items-center ">
                 <button className="flex gap-3 items-center">
-                  <FaLessThan />
-                  Previous Lesson
+                  Next Lesson
+                  <FaGreaterThan />
                 </button>
               </div>
             </div>
@@ -200,28 +199,28 @@ const Csec4 = () => {
         )}
 
         <div className="lg:px-14 px-4 lg:py-7 lg:flex-[70%] w-">
-          <h1 className="font-bold lg:text-[50px] text-[40px] pb-10">
-            Cybersecurity Policies and Risk Management
+          <h1 className="font-bold lg:text-[70px] text-[40px] pb-10">
+            Introduction to HTML
           </h1>
           <div className="flex items-center gap-1 px-2 py-2 bg-[#ecf0f2] rounded-lg">
-            <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-xm">
-              Cybersecurity Essentials
+            <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
+              HTML5/CSS3 Essentials
             </span>
             <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
             </span>
-            <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-xm">
-              Authentication, Authorization, and Encryption
+            <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
+              Introduction to HTML
             </span>
-            <span className="hover:cursor-pointer">
+            {/* <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
             </span>
-            <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-xm">
-              Cybersecurity Policies and Risk Management
-            </span>
+            <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
+              HTML Elements
+            </span> */}
           </div>
 
-          <div className="py-4 pl-4 pr-[20px] flex lg:flex-row flex-col items-center lg:gap-28 gap-7 justify-between rounded-lg border-2 mt-10 border-[#007991]">
+          {/* <div className="py-4 pl-4 pr-[20px] flex lg:flex-row flex-col items-center lg:gap-28 gap-7 justify-between rounded-lg border-2 mt-10 border-[#007991]">
             <div className="flex lg:flex-row flex-col items-center gap-2 text-[#007991]">
               <div className="rounded-full border-[3px] p-[2px] border-[#007991]">
                 <IoMdAlert className="text-3xl" />
@@ -234,17 +233,63 @@ const Csec4 = () => {
               <PiLessThanLight className="text-[10px] font-bold" />
               <span className="font-semibold text-xs">Back</span>
             </button>
+          </div> */}
+
+          <div>
+            <div className="h-screen mx-22 my-8 bg-cover items-center flex justify-center bg-center bg-[url('https://i.ytimg.com/vi/HJRzUQMhJMQ/maxresdefault.jpg')]">
+              <div className="w-20 h-[60px] rounded-lg bg-blue-400/90 flex justify-center items-center hover:bg-blue-500">
+                <a
+                  href="https://youtu.be/OpwnGiJB0wc?si=L879xSMLf9xML-yD"
+                  className="text-white text-3xl"
+                  target="_blank"
+                >
+                  <FaPlay />
+                </a>
+              </div>
+              {/* <iframe
+                          className="w-full h-full bg-transparent"
+                          scr="https://youtu.be/OpwnGiJB0wc?si=L879xSMLf9xML-yD"
+                          target="_blank"
+                          title="Video"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        ></iframe> */}
+            </div>
+
+            <p>
+              Embark on an exciting journey into web development with our
+              comprehensive HTML5 introductory course. Whether you're a complete
+              beginner or looking to formalize your understanding of web
+              technologies, this course provides the perfect foundation for your
+              digital future.HTML5 represents the cornerstone of modern web
+              development, and this course will guide you through every
+              essential concept with clarity and precision. You'll discover how
+              to structure web pages using semantic elements that not only look
+              great but also enhance accessibility and search engine
+              optimization. From creating your first webpage to implementing
+              multimedia content, forms, and interactive elements, you'll gain
+              hands-on experience with the building blocks that power billions
+              of websites worldwide.Our project-based approach ensures you're
+              not just learning theory—you'll be building real websites from day
+              one. Each lesson builds progressively on the last, with practical
+              exercises that reinforce your learning and build your confidence.
+              By the end of this course, you'll have created multiple web pages
+              showcasing your new skills and understanding of HTML5's
+              capabilities.
+            </p>
           </div>
 
-          <div className="flex items-center justify-between mt-7 py-7 border-t-2">
-            <Link to="/Csec3">
-              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-                <PiLessThanBold className="text-[10px] font-bold" />
-                <span className="text-sm font-bold">Previous Lesson</span>
+          <div className="flex flex-col lg:flex-row items-center justify-between mt-7 py-7 space-y-5 border-t-2">
+            <Link to="/All">
+              <button className="text-orange-300 flex items-center gap-5 py-[5px] px-[22px] rounded-xl">
+                {/* <PiLessThanBold className="text-[10px] font-bold" /> */}
+                <span className="text-sm font-medium lg:pl-[250px]">
+                  Back to Course
+                </span>
               </button>
             </Link>
 
-            <Link to="/dashboard">
+            <Link to="/Ext">
               <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
                 <span className="text-sm font-bold">Next Topic</span>
                 <PiGreaterThanBold className="text-[10px]" />
@@ -257,4 +302,4 @@ const Csec4 = () => {
   );
 };
 
-export default Csec4;
+export default ItHtml;

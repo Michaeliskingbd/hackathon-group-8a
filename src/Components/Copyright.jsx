@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
 
-const Footer = () => {
+const Copyright = () => {
   return (
     <>
     <footer className=''>
@@ -55,4 +55,4 @@ const Footer = () => {
   )
 }
 
-export default Footer;
+export default Copyright;
