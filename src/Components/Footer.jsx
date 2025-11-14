@@ -33,7 +33,7 @@ const Footer = () => {
             <li className='font-semibold text-2xl lg:pt-0 pt-14'>Contact Info</li>
             <div className='lg:pt-6 pt-5'>
             <li className='font-semibold'>Address</li>
-            <li>123 Fifth Avenue, New York, NY 10160</li>
+            <li>Soun Ajagungbade, Bodija Ibadan.</li>
             <li className='font-semibold'>Phone</li>
             <li>929-242-6868</li>
             <li className='font-semibold'>Email</li>
@@ -49,7 +49,7 @@ const Footer = () => {
      <div className='border-[0.1px] border-t-0 mb-5'></div>
         <div className='lg:flex lg:justify-around h-10 px-3'> 
         <p>copyright&copy; 2025</p>
-        <span>Powered by Appclick students julycohort</span>
+        <span>Powered by SkillHub</span>
         </div>
         </>
   )
