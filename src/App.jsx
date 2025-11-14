@@ -35,23 +35,24 @@ import Courses2A from "./components/Courses2A";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="instructor" element={<Instructors />} />
-      <Route path="contact" element={<Contact />} />
+    // <Routes>
+    //   <Route path="/" element={<HomePage />} />
+    //   <Route path="instructors" element={<Instructors />} />
+    //   <Route path="contact" element={<Contact />} />
 
-      <Route path="dashboard" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="overview" element={<Dashboard />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="resources" element={<Resources />} />
-        <Route path="courses" element={<Courses />} />
-        <Route path="job" element={<JobPage />} />
-        <Route path="form" element={<Form />} />
-        <Route path="notice" element={<NoticeBoard />} />
-        <Route path="assignment" element={<Assignment />} />
-      </Route>
-    </Routes>
+    //   <Route path="dashboard" element={<Layout />}>
+    //     <Route index element={<Home />} />
+    //     <Route path="overview" element={<Dashboard />} />
+    //     <Route path="profile" element={<Profile />} />
+    //     <Route path="resources" element={<Resources />} />
+    //     <Route path="courses" element={<Courses />} />
+    //     <Route path="job" element={<JobPage />} />
+    //     <Route path="form" element={<Form />} />
+    //     <Route path="notice" element={<NoticeBoard />} />
+    //     <Route path="assignment" element={<Assignment />} />
+    //   </Route>
+    // </Routes>
+    <div></div>
   );
 };
 
