@@ -37,7 +37,9 @@ const MainHome = () => {
               <Link to="/pricingPage">
                 <li className="hover:cursor-pointer">Pricing & FAQ</li>
               </Link>
-              <li className="hover:cursor-pointer">Contact</li>
+              <Link to="/Contact">
+                <li className="hover:cursor-pointer">Contact</li>
+              </Link>
             </ul>
 
             <button className="text-white lg:flex hidden bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] px-5 py-2 font-semibold rounded-3xl">
@@ -81,9 +83,9 @@ const MainHome = () => {
               career growth, creativity and digital innovation.
             </p>
             <div className="flex items-center flex-row gap-10 z-10">
-              <Link to="/cour2">
-                <button className="text-white bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] py-2 px-7 rounded-3xl text-base font-semibold">
-                  START COURSE
+              <Link to="/dashboard">
+                <button className="text-white uppercase bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] py-2 px-7 rounded-3xl text-base font-semibold">
+                  View My Progress
                 </button>
               </Link>
               <div className="flex items-center gap-2 text-white text-base font-semibold hover:text-orange-400 hover:cursor-pointer">

@@ -121,7 +121,9 @@ const AllCou = () => {
               <div className="flex items-center gap-1">
                 <FaRegCircle className="text-gray-300 text-xl " />
                 <div className="pt-2 text-base hover:cursor-pointer hover:text-[#ffab5e]">
-                  <p>Introduction to HTML</p>
+                  <Link to="/ItHtml">
+                    <p>Introduction to HTML</p>
+                  </Link>
                   <p className="font-bold text-sm text-gray-400">2 Topics</p>
                 </div>
               </div>

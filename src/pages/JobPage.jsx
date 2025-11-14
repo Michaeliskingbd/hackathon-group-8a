@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Upload, X, CheckCircle } from "lucide-react";
 import confetti from "canvas-confetti"; // optional for confetti burst
 
-const Jobs = () => {
+const JobPage = () => {
   const jobs = [
     { id: 1, title: "Frontend Developer", company: "Ivonix Studios" },
     { id: 2, title: "Backend Engineer", company: "TechNova" },
@@ -229,5 +229,4 @@ const Jobs = () => {
     </div>
   );
 };
-
-export default Jobs;
+export default JobPage;
