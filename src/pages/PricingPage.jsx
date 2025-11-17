@@ -10,7 +10,7 @@ const PricingPage = () => {
       <div className=" bg-gradient-to-b from-[#ecf0f2] to-slate-100">
         <Membership />
         <FaqItem />
-        <EmailSecH className="" />
+        <EmailSecH />
         <HackFooter />
       </div>
     </>
