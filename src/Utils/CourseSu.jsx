@@ -36,7 +36,7 @@ const subCourses = [
       " Learn how to build, customize, and manage professional websites using WordPress.",
   },
   {
-    img: "https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=IWQzVeh6--ZOe9YxB1-EI1KSWooYTpZS2sqe6Zu6GJM=",
+    img: "https://etcinstitute.com/wp-content/uploads/2023/08/Analysis.png",
     course: "Data Analysis",
     description:
       "Master the skills needed to collect, clean, analyze, and interpret data in today's data-driven world.",
