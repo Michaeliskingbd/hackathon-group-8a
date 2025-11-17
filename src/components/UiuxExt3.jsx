@@ -102,7 +102,7 @@ const UiuxExt3 = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <Link to="/Ext">
+                <Link to="/UiuxExt1">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -110,7 +110,7 @@ const UiuxExt3 = () => {
                     </p>
                   </div>
                 </Link>
-                <Link to="/Hattb">
+                <Link to="/UiuxExt2">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -122,12 +122,14 @@ const UiuxExt3 = () => {
             )}
 
             <div className="px-5 py-4 space-y-2 text-orange-300 border-b-[1px] border-t-[1px]">
-              <div className="flex items-center gap-2">
-                <FaRegCircle className="text-lg" />
-                <p className="text-[14px] font-bold hover:cursor-pointer">
-                  Wireframing and Low-Fidelity Prototyping
-                </p>
-              </div>
+              <Link to="/ItUiux2">
+                <div className="flex items-center gap-2">
+                  <FaRegCircle className="text-lg" />
+                  <p className="text-[14px] font-bold hover:cursor-pointer">
+                    Wireframing and Low-Fidelity Prototyping
+                  </p>
+                </div>
+              </Link>
               <div onClick={topicsL2}>
                 {showTopicsL2 ? (
                   <div className="flex items-center gap-1 px-4 text-orange-300">
@@ -152,13 +154,15 @@ const UiuxExt3 = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <div className="flex items-center gap-1">
-                  <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                  <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
-                    Visual Design Principles
-                  </p>
-                </div>
-                <Link to="/SelCss">
+                <Link to="/UiuxExt3">
+                  <div className="flex items-center gap-1">
+                    <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
+                    <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
+                      Visual Design Principles
+                    </p>
+                  </div>
+                </Link>
+                <Link to="/UiuxExt4">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -205,7 +209,7 @@ const UiuxExt3 = () => {
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-sm">
-              Introduction to UI/UX Design
+              Wireframing and Low-Fidelity Prototyping
             </span>
             <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
@@ -231,15 +235,19 @@ const UiuxExt3 = () => {
           </div>
 
           <div className="flex items-center justify-between mt-7 py-7 border-t-2">
-            <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-              <PiLessThanBold className="text-[10px] font-bold" />
-              <span className="text-sm font-bold">Previous Lesson</span>
-            </button>
+            <Link to="/ItUiux2">
+              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
+                <PiLessThanBold className="text-[10px] font-bold" />
+                <span className="text-sm font-bold">Previous Lesson</span>
+              </button>
+            </Link>
 
-            <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-              <span className="text-sm font-bold">Next Topic</span>
-              <PiGreaterThanBold className="text-[10px]" />
-            </button>
+            <Link to="/UiuxExt4">
+              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
+                <span className="text-sm font-bold">Next Topic</span>
+                <PiGreaterThanBold className="text-[10px]" />
+              </button>
+            </Link>
           </div>
         </div>
       </article>

@@ -1,7 +1,11 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const SubMain = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <section className="py-20 pl-10 bg-[#ecf0f2]">
       <article className=" flex lg:flex-row flex-col mb-20">
@@ -67,7 +71,11 @@ const SubMain = () => {
         </div>
       </article>
 
-      <article className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit mr-10">
+      <article
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit mr-10"
+      >
         <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/html.jpg"

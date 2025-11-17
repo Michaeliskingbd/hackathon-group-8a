@@ -74,7 +74,7 @@ const Csec = () => {
                 <div className="flex items-center gap-2">
                   <FaRegCircle className="text-lg" />
                   <p className="font-bold text-[12px] hover:cursor-pointer">
-                    {p.mainT}
+                    <Link to="/ItCsec"> {p.mainT}</Link>
                   </p>
                 </div>
 
@@ -102,7 +102,7 @@ const Csec = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <Link to="/Ext">
+                <Link to="/Csec">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -110,7 +110,7 @@ const Csec = () => {
                     </p>
                   </div>
                 </Link>
-                <Link to="/Hattb">
+                <Link to="/Csec2">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -152,7 +152,7 @@ const Csec = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <Link to="/Atag">
+                <Link to="/Csec3">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -160,12 +160,14 @@ const Csec = () => {
                     </p>
                   </div>
                 </Link>
-                <div className="flex items-center gap-1">
-                  <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                  <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
-                    Cybersecurity Policies and Risk Management
-                  </p>
-                </div>
+                <Link to="/Csec4">
+                  <div className="flex items-center gap-1">
+                    <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
+                    <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
+                      Cybersecurity Policies and Risk Management
+                    </p>
+                  </div>
+                </Link>
               </div>
             )}
           </div>
@@ -231,15 +233,19 @@ const Csec = () => {
           </div>
 
           <div className="flex items-center justify-between mt-7 py-7 border-t-2">
-            <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-              <PiLessThanBold className="text-[10px] font-bold" />
-              <span className="text-sm font-bold">Previous Lesson</span>
-            </button>
+            <Link to="/ItCsec">
+              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
+                <PiLessThanBold className="text-[10px] font-bold" />
+                <span className="text-sm font-bold">Previous Lesson</span>
+              </button>
+            </Link>
 
-            <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-              <span className="text-sm font-bold">Next Topic</span>
-              <PiGreaterThanBold className="text-[10px]" />
-            </button>
+            <Link to="/Csec2">
+              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
+                <span className="text-sm font-bold">Next Topic</span>
+                <PiGreaterThanBold className="text-[10px]" />
+              </button>
+            </Link>
           </div>
         </div>
       </article>

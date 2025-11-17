@@ -7,27 +7,28 @@ const Resources = () => {
     {
       id: 1,
       title: "HTML Fundamentals",
-      file: "/html.pdf",
+      file: "/public/html.pdf",
       color: "from-pink-500 to-red-500",
     },
     {
       id: 2,
       title: "CSS Mastery",
-      file: "/css.pdf",
+      file: "/public/css.pdf",
       color: "from-blue-500 to-cyan-500",
     },
     {
       id: 3,
       title: "JavaScript Deep Dive",
-      file: "/javascript.pdf",
+      file: "/public/javascript.pdf",
       color: "from-yellow-400 to-orange-500",
     },
     {
       id: 4,
       title: "React for Developers",
-      file: "/react.pdf",
+      file: "/public/react.pdf",
       color: "from-indigo-500 to-purple-500",
     },
+
   ];
 
   const [selected, setSelected] = useState(resources[0]);
