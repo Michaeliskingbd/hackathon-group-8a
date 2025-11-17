@@ -7,7 +7,7 @@ import { BsEnvelope } from "react-icons/bs";
 import NavItem from "./NavItem";
 import NavList from "../Utils/NavList";
 import { ImProfile } from "react-icons/im";
-// import Logo from "../assets/logo.svg"; // optional logo
+import Logo from "../assets/edu.png";
 
 const SideBar = ({ isOpen, setIsOpen }) => {
   const location = useLocation();
