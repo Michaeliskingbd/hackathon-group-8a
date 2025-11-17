@@ -32,13 +32,18 @@ import Csec2 from "./Components/Csec2";
 import Instructors from "./pages/Instructors";
 import AllCou from "./components/AllCou";
 import Courses2A from "./components/Courses2A";
+import SignUpLogin from "./pages/AuthPage";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   return (
+
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="instructor" element={<Instructors />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="/signIn" element={<SignUpLogin />} />
+      <Route path="/aboutPage" element={<AboutUs />} />
 
       <Route path="dashboard" element={<Layout />}>
         <Route index element={<Home />} />

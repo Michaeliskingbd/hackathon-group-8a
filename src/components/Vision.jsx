@@ -1,40 +1,23 @@
-
+import VisionSection from "./VisionSection";
+import illustration from "../assets/vision.png";
 
 const Vision = () => {
   return (
-    <section className='px-8 flex pb-32 justify-between'>
-            <div className='font-[poppins] space-y-3'>
-                <p className='font-semibold text-lg'>Our Vision</p>
-                <h1 className='font-semibold text-[43px]'>Who We Are</h1>
-            </div>
+    <VisionSection
+      illustration={illustration}
+      leftParagraph={`At SkillHub, our vision is to break barriers and ignite curiosity. 
+      We believe learning is a lifelong journey, and technology is the key 
+      to unlocking limitless potential. Whether you're a complete beginner 
+      or a seasoned pro, we're here to guide you through the ever-evolving 
+      world of web development.`}
 
-            <div className='flex flex-col gap-3'>
-                <h1 className='font-[poppins] font-semibold text-[23px]'>"It is impossible for a man to learn what he thinks he 
-                <br />already knows."</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <br />
-                magna aliqua. Ut enim ad minim.</p>
-                <div className='flex gap-3 pt-4'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br />
-                    sed do eiusmod tempor incididunt ut labore et dolore <br />
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud <br />
-                    exercitation ullamco laboris nisi ut aliquip ex ea <br />
-                    commodo consequat. Duis aute irure dolor in <br />
-                    reprehenderit in voluptate velit esse cillum dolore eu <br />
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
-
-                    <p>
-                        non proident, sunt in culpa qui officia deserunt mollit <br />
-                        anim id est laborum. Sed ut perspiciatis unde omnis iste <br />
-                        natus error sit voluptatem accusantium doloremque <br />
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo <br />
-                        inventore veritatis et quasi architecto beatae vitae dicta <br />
-                        sunt explicabo. Nemo enim ipsam voluptatem quia <br />
-                        voluptas
-                    </p>
-                </div>
-            </div>
-    </section>
-  )
-}
+      rightParagraph={`We're not just an e-learning platform—we're a community of passionate 
+      learners, creators, and innovators. Our mission is to empower you 
+      with hands-on skills, real-world projects, and mentorship. From 
+      coding fundamentals to advanced tech stacks, we provide everything 
+      you need to excel and build meaningful solutions.`}
+    />
+  );
+};
 
 export default Vision;
