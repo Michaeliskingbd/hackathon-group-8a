@@ -19,7 +19,9 @@ const NavList = () => {
       <Link to="/pricingPage">
         <li className="hover:cursor-pointer">Pricing & FAQ</li>
       </Link>
-      <li className="hover:cursor-pointer">Contact</li>
+      <Link to="/Contact">
+        <li className="hover:cursor-pointer">Contact</li>
+      </Link>
     </>
   );
 };

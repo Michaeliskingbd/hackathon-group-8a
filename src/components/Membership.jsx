@@ -6,14 +6,14 @@ const Membership = () => {
   const memberships = [
     {
       title: "Monthly",
-      price: 49,
+      price: 15000,
       duration: "Month",
       features: [
         "Course Learning Checks",
         "Course Discussion",
         "Excercise Files",
-        "Offline Viewing",
-        "Full Lifetime Access",
+        // "Offline Viewing",
+        // "Full Lifetime Access",
         "Certificate of Completion",
       ],
       buttonText: "Purchase",
@@ -22,7 +22,7 @@ const Membership = () => {
     },
     {
       title: "Annual",
-      price: 485,
+      price: 180000,
       duration: "Year",
       features: [
         "Course Learning Checks",
@@ -38,7 +38,7 @@ const Membership = () => {
     },
     {
       title: "Extended",
-      price: 99,
+      price: 20000,
       duration: "Month",
       features: [
         "Course Learning Checks",

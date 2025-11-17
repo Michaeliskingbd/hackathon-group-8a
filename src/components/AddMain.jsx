@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import images1 from "../assets/img1.jpeg";
 import images2 from "../assets/img2.jpeg";
@@ -6,8 +6,12 @@ import images3 from "../assets/logo.jpg";
 import images4 from "../assets/img4.jpeg";
 import CountUp from "react-countup";
 import { Rate } from "antd";
+import Aos from "aos";
 
 const AddMain = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <section className="py-10 pl-10 bg-gradient-to-b from-[#ecf0f2] to-[#e8eaea]">
       <article className="flex lg:flex-row flex-col space-y-14">
@@ -42,7 +46,11 @@ const AddMain = () => {
         </div>
       </article>
 
-      <article className="pt-28 pr-12">
+      <article
+        data-aos="fade-down-right"
+        duration="1000"
+        className="pt-28 pr-12"
+      >
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div className="relative bg-white border pl-10 pt-14 pb-2 pr-1 rounded-2xl space-y-7 mb-20">
             <p className="text-base">

@@ -25,6 +25,7 @@ import {
   Star,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import Nav from "../utils/Nav";
 
 const Dashboard = () => {
   const [selectedDay, setSelectedDay] = useState("Mon");

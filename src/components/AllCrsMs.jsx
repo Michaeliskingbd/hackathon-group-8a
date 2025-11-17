@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import CourseSu from "../utils/CourseSu";
+import Aos from "aos";
 
 const AllCrsMs = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <section className="pt-20 px-10 bg-[#ecf0f2]">
       <article className="flex lg:flex-row flex-col space-y-7 mb-20">
@@ -25,8 +30,13 @@ const AllCrsMs = () => {
         </Link>
       </article>
 
-      <article className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit lg:mr-10">
-        <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
+      <article
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="grid lg:grid-cols-3 grid-cols-1 gap-10 w-fit lg:mr-10"
+      >
+        <CourseSu />
+        {/* <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/html.jpg"
             alt=""
@@ -43,9 +53,9 @@ const AllCrsMs = () => {
               </button>
             </Link>
           </div>
-        </div>
+        </div> */}
 
-        <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
+        {/* <div className="lg:w-[375px] w-full lg:h-[450px] h-full border-2 bg-white">
           <img
             src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/04/wordpress.jpg"
             alt=""
@@ -83,7 +93,7 @@ const AllCrsMs = () => {
               </button>
             </Link>
           </div>
-        </div>
+        </div> */}
       </article>
     </section>
   );

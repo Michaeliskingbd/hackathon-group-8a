@@ -5,6 +5,8 @@ import { LiaAddressBookSolid } from "react-icons/lia";
 import { GrResources } from "react-icons/gr";
 import { BsEnvelope } from "react-icons/bs";
 import NavItem from "./NavItem";
+import NavList from "../Utils/NavList";
+import { ImProfile } from "react-icons/im";
 // import Logo from "../assets/logo.svg"; // optional logo
 
 const SideBar = ({ isOpen, setIsOpen }) => {
@@ -12,8 +14,13 @@ const SideBar = ({ isOpen, setIsOpen }) => {
 
   const navItems = [
     {
-      to: "/dashboard/overview",
+      to: "/",
       icon: <Home className="h-5 w-5" />,
+      label: "Home",
+    },
+    {
+      to: "/dashboard/overview",
+      icon: <ImProfile className="h-5 w-5" />,
       label: "Overview",
     },
     {
