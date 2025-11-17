@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookSquare, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import { FaSquareGithub, FaSquareXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const HackFooter = () => {
   return (
@@ -37,18 +38,24 @@ const HackFooter = () => {
             <a href="" className="hover:text-[#007991]">
               WordPress Basic Tutorial
             </a>
-            <a href="" className="hover:text-[#007991]">
-              HTML5/CSS3 Essentials
-            </a>
+            <Link to="/All">
+              <a href="" className="hover:text-[#007991]">
+                HTML5/CSS3 Essentials
+              </a>
+            </Link>
             <a href="" className="hover:text-[#007991]">
               JavaScript Development
             </a>
-            <a href="" className="hover:text-[#007991]">
-              Cybersecurity Essentials
-            </a>
-            <a href="" className="hover:text-[#007991]">
-              UI/UX Design Fundamentals
-            </a>
+            <Link to="/Cou3">
+              <a href="" className="hover:text-[#007991]">
+                Cybersecurity Essentials
+              </a>
+            </Link>
+            <Link to="/Cou2">
+              <a href="" className="hover:text-[#007991]">
+                UI/UX Design Fundamentals
+              </a>
+            </Link>
           </div>
         </div>
 
