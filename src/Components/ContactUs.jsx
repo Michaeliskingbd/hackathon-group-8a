@@ -37,7 +37,7 @@ const ContactUs = () => {
             </div> 
             <div className='flex flex-col mt-8 gap-5'>
               <p className='flex gap-3'><MapPin className='text-sm text-black' /> Soun Ajagungbade, Bodija Ibadan.</p>
-              <p className='flex gap-6'><BiEnvelope className='text-black' /> hackathongroup8@gmail.com</p>
+              <p className='flex gap-6'><BiEnvelope className='text-black' /> SkillHub@gmail.com</p>
               <p className='flex gap-3'><Phone className='text-black text-sm'/>+91 867782 </p>
             </div>
             <div className='flex pt-5 gap-9 items-center'>

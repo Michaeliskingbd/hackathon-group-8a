@@ -32,36 +32,51 @@ import Csec2 from "./Components/Csec2";
 import Instructors from "./pages/Instructors";
 import AllCou from "./components/AllCou";
 import Courses2A from "./components/Courses2A";
+import PricingPage from "./pages/PricingPage";
+import ItHtml from "./Components/ItHtml";
+import ItCss from "./Components/ItCss";
+import ItUiux from "./Components/ItUiux";
+import ItUiux2 from "./Components/ItUiux2";
+import ItCsec from "./Components/ItCsec";
+import ItCsec2 from "./Components/ItCsec2";
+import SignUpLogin from "./pages/AuthPage";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" index element={<Home />} />
+      //Main Page Routes
+      <Route path="/" index element={<HomePage />} />
       <Route path="/AllCourses" index element={<AllCourses />} />
-      {/* <Route path="/instructors" element={<Instructors />} /> */}
-      {/*  <Route path="/aboutPage" elements={<About />} /> */}
+      <Route path="/Contact" index element={<Contact />} />
+      <Route path="/instructors" element={<Instructors />} />
+      <Route path="/about" element={<AboutUs />} />
       <Route path="/All" element={<AllCou />} />
+      <Route path="/login" element={<SignUpLogin />} />
       <Route path="/pricingPage" element={<PricingPage />} />
       <Route path="/Cou2" element={<Courses2A />} />
       <Route path="/Cou3" element={<Courses3A />} />
       //Extended pages
+      <Route path="/ItHtml" element={<ItHtml />} />
       <Route path="/Ext" element={<CrsExtend />} />
       <Route path="/Hattb" element={<HtmlAttb />} />
+      <Route path="/ItCss" element={<ItCss />} />
       <Route path="/Atag" element={<AnaTag />} />
       <Route path="/SelCss" element={<SelCss />} />
+      <Route path="/ItUiux" element={<ItUiux />} />
+      <Route path="/ItUiux2" element={<ItUiux2 />} />
       <Route path="/UiuxExt" element={<UiuxExt />} />
       <Route path="/UiuxExt2" element={<UiuxExt2 />} />
       <Route path="/UiuxExt3" element={<UiuxExt3 />} />
       <Route path="/UiuxExt4" element={<UiuxExt4 />} />
+      <Route path="/ItCsec" element={<ItCsec />} />
+      <Route path="/ItCsec2" element={<ItCsec2 />} />
       <Route path="/Csec" element={<Csec />} />
       <Route path="/Csec2" element={<Csec2 />} />
       <Route path="/Csec3" element={<Csec3 />} />
       <Route path="/Csec4" element={<Csec4 />} />
-      <Route path="/" element={<HomePage />} />
-      <Route path="instructor" element={<Instructors />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="dashboard" element={<Layout />}>
-        <Route index element={<Home />} />
+      //Dashboard Routes
+      <Route path="/dashboard" element={<Layout />}>
         <Route path="overview" element={<Dashboard />} />
         <Route path="profile" element={<Profile />} />
         <Route path="resources" element={<Resources />} />

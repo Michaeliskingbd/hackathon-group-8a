@@ -25,6 +25,7 @@ import {
   Star,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import Nav from "../utils/Nav";
 
 const Dashboard = () => {
   const [selectedDay, setSelectedDay] = useState("Mon");
@@ -313,7 +314,7 @@ const Dashboard = () => {
                   Due in 3 days • React & CSS
                 </p>
               </div>
-              <Link to="/assignment">
+              <Link to="assignment">
                 <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors flex items-center gap-2">
                   Start Now <ChevronRight className="w-5 h-5" />
                 </button>

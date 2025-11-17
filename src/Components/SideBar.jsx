@@ -5,6 +5,8 @@ import { LiaAddressBookSolid } from "react-icons/lia";
 import { GrResources } from "react-icons/gr";
 import { BsEnvelope } from "react-icons/bs";
 import NavItem from "./NavItem";
+import NavList from "../Utils/NavList";
+import { ImProfile } from "react-icons/im";
 // import Logo from "../assets/logo.svg"; // optional logo
 
 const SideBar = ({ isOpen, setIsOpen }) => {
@@ -12,8 +14,13 @@ const SideBar = ({ isOpen, setIsOpen }) => {
 
   const navItems = [
     {
-      to: "/dashboard/overview",
+      to: "/",
       icon: <Home className="h-5 w-5" />,
+      label: "Home",
+    },
+    {
+      to: "/dashboard/overview",
+      icon: <ImProfile className="h-5 w-5" />,
       label: "Overview",
     },
     {
@@ -63,7 +70,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
         {/* Header / Brand */}
         <div className="flex items-center justify-between p-4 border-b border-white/20">
           <div className="flex items-center gap-2">
-            <img src="{Logo}" alt="logo" className="w-8 h-8" />
+            <img src={Logo} alt="logo" className="w-11 h-5 bg-cyan-500" />
             <h1 className="font-bold text-lg tracking-wide">SkillHub</h1>
           </div>
           <button onClick={() => setIsOpen(false)} className="md:hidden">

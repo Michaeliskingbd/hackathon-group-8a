@@ -66,7 +66,7 @@ const Sub2 = () => {
           </p>
         </div>
 
-        <div className=" lg:py-28 py-10  flex-[22%] z-10">
+        <div className=" lg:py-28  py-10 flex-[22%] z-10">
           <div className="flex gap-[2px] pt-[38px] pb-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"

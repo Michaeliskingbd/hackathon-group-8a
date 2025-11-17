@@ -71,12 +71,14 @@ const Csec3 = () => {
             </div>
             {subTopics.map((p, index) => (
               <div key={index} className="px-5 py-4 space-y-2">
-                <div className="flex items-center gap-2">
-                  <FaRegCircle className="text-[#c0c0c1]" />
-                  <p className="font-thin text-[12px] hover:cursor-pointer hover:text-orange-300">
-                    {p.mainT}
-                  </p>
-                </div>
+                <Link to="/ItCsec">
+                  <div className="flex items-center gap-2">
+                    <FaRegCircle className="text-[#c0c0c1]" />
+                    <p className="font-thin text-[12px] hover:cursor-pointer hover:text-orange-300">
+                      {p.mainT}
+                    </p>
+                  </div>
+                </Link>
 
                 <div onClick={topics}>
                   {showTopics ? (
@@ -102,7 +104,7 @@ const Csec3 = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <Link to="/Ext">
+                <Link to="/Csec">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -110,7 +112,7 @@ const Csec3 = () => {
                     </p>
                   </div>
                 </Link>
-                <Link to="/Hattb">
+                <Link to="/Csec2">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -122,12 +124,15 @@ const Csec3 = () => {
             )}
 
             <div className="px-5 py-4 space-y-2 text-orange-300 border-b-[1px] border-t-[1px]">
-              <div className="flex items-center gap-2">
-                <FaRegCircle className="text-lg" />
-                <p className="text-[14px] font-bold hover:cursor-pointer">
-                  Authentication, Authorization, and Encryption
-                </p>
-              </div>
+              <Link to="/ItCsec2">
+                <div className="flex items-center gap-2">
+                  <FaRegCircle className="text-lg" />
+                  <p className="text-[14px] font-bold hover:cursor-pointer">
+                    Authentication, Authorization, and Encryption
+                  </p>
+                </div>
+              </Link>
+
               <div onClick={topicsL2}>
                 {showTopicsL2 ? (
                   <div className="flex items-center gap-1 px-4 text-orange-300">
@@ -152,13 +157,15 @@ const Csec3 = () => {
                 <div>
                   <VscTriangleDown className="text-white text-2xl absolute left-9 top-[-10px]" />
                 </div>
-                <div className="flex items-center gap-1">
-                  <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
-                  <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
-                    Firewalls, VPNs, and Intrusion Detection Systems
-                  </p>
-                </div>
-                <Link to="/SelCss">
+                <Link to="/Csec3">
+                  <div className="flex items-center gap-1">
+                    <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
+                    <p className="font-bold text-[12px] hover:cursor-pointer hover:text-orange-300">
+                      Firewalls, VPNs, and Intrusion Detection Systems
+                    </p>
+                  </div>
+                </Link>
+                <Link to="/Csec4">
                   <div className="flex items-center gap-1">
                     <FaRegCircle className="text-orange-300 bg-white rounded-full font-extrabold" />
                     <p className="font-light text-[12px] hover:cursor-pointer hover:text-orange-300">
@@ -205,7 +212,7 @@ const Csec3 = () => {
               <PiGreaterThanLight className="text-[8px]" />
             </span>
             <span className="hover:cursor-pointer text-orange-300 font-semibold text-xs lg:text-xm">
-              Introduction to Cybersecurity and its importance
+              Authentication, Authorization, and Encryption
             </span>
             <span className="hover:cursor-pointer">
               <PiGreaterThanLight className="text-[8px]" />
@@ -231,15 +238,18 @@ const Csec3 = () => {
           </div>
 
           <div className="flex items-center justify-between mt-7 py-7 border-t-2">
-            <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-              <PiLessThanBold className="text-[10px] font-bold" />
-              <span className="text-sm font-bold">Previous Lesson</span>
-            </button>
-
-            <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
-              <span className="text-sm font-bold">Next Topic</span>
-              <PiGreaterThanBold className="text-[10px]" />
-            </button>
+            <Link to="/ItCsec2">
+              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
+                <PiLessThanBold className="text-[10px] font-bold" />
+                <span className="text-sm font-bold">Previous Lesson</span>
+              </button>
+            </Link>
+            <Link to="/Csec4">
+              <button className="bg-orange-300 flex items-center gap-5 py-[5px] px-[22px] text-white rounded-xl">
+                <span className="text-sm font-bold">Next Topic</span>
+                <PiGreaterThanBold className="text-[10px]" />
+              </button>
+            </Link>
           </div>
         </div>
       </article>

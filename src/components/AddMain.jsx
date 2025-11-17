@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import images1 from "../assets/img1.jpeg";
 import images2 from "../assets/img2.jpeg";
-import images3 from "../assets/img3.jpeg";
+import images3 from "../assets/logo.jpg";
 import images4 from "../assets/img4.jpeg";
 import CountUp from "react-countup";
 import { Rate } from "antd";
+import Aos from "aos";
 
 const AddMain = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <section className="py-10 pl-10 bg-gradient-to-b from-[#ecf0f2] to-[#fcfafa]">
+    <section className="py-10 pl-10 bg-gradient-to-b from-[#ecf0f2] to-[#e8eaea]">
       <article className="flex lg:flex-row flex-col space-y-14">
         <div className="flex-1 space-y-4">
           <h6 className="font-semibold text-xl">Testimonials</h6>
@@ -42,15 +46,19 @@ const AddMain = () => {
         </div>
       </article>
 
-      <article className="pt-28 pr-12">
+      <article
+        data-aos="fade-down-right"
+        duration="1000"
+        className="pt-28 pr-12"
+      >
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div className="relative bg-white border pl-10 pt-14 pb-2 pr-1 rounded-2xl space-y-7 mb-20">
             <p className="text-base">
-              “Massa amet, at dolor tellus pellentesque aenean in eget massa
-              tincidunt habitasse volutpat adipiscing sed id sit auctor eu
-              vivamus nulla.”
+              “A renowned cybersecurity expert with two decades of experience
+              protecting critical infrastructure for government agencies and
+              multinational corporations.”
             </p>
-            <h4 className="font-semibold text-lg ">Emma Hart</h4>
+            <h4 className="font-semibold text-lg ">Olamide Adegboyega</h4>
             <span className="flex text-orange-400 gap-2 text-xs justify-end">
               <FaStar />
               <FaStar />
@@ -71,11 +79,11 @@ const AddMain = () => {
 
           <div className="relative bg-white border pl-10 pt-14 pb-2 pr-1 rounded-2xl space-y-7 mb-20">
             <p className="text-base">
-              “Ut morbi felis, felis massa quam sit massa, amet, bibendum
-              pulvinar elit in adipiscing amet imperdiet ac felis congue enim,
-              elementum orci.”
+              “A celebrated UI/UX designer whose work has earned multiple
+              industry accolades, including the prestigious Red Dot Design Award
+              and Webby Award.”
             </p>
-            <h4 className="font-semibold text-lg">Eddie Johnson</h4>
+            <h4 className="font-semibold text-lg">Sulaimon Faishat</h4>
             <span className="flex text-orange-400 gap-2 text-xs justify-end">
               <FaStar />
               <FaStar />
@@ -96,11 +104,11 @@ const AddMain = () => {
 
           <div className="relative bg-white border pl-10 pt-14 pb-2 pr-1 rounded-2xl space-y-7 mb-20">
             <p className="text-base">
-              “Donec in varius facilisis justo, curabitur aliquet sit justo sed
-              sit interdum diam dolor ornare quis a felis adipiscing hendrerit
-              quisque enim.”
+              “A pioneering force in modern web development with over 15 years
+              of experience building scalable applications for Fortune 500
+              companies.”
             </p>
-            <h4 className="font-semibold text-lg">Jonathan Doe</h4>
+            <h4 className="font-semibold text-lg">Fadahunsi John</h4>
             <span className="flex text-orange-400 gap-2 text-xs justify-end">
               <FaStar />
               <FaStar />
@@ -121,11 +129,11 @@ const AddMain = () => {
 
           <div className="relative bg-white border pl-10 pt-14 pb-2 pr-1 rounded-2xl space-y-7 mb-20">
             <p className="text-base">
-              “Pulvinar dui vitae enim, diam et nulla elit nam leo lacinia et,
-              a, pulvinar gravida enim in blandit mauris vitae volutpat urna,
-              sed justo hendrerit.”
+              "A dynamic digital marketing strategist who has helped over 30
+              businesses scale from startup to seven-figure revenue through
+              data-driven marketing campaigns.”
             </p>
-            <h4 className="font-semibold text-lg">Mike Edward</h4>
+            <h4 className="font-semibold text-lg">Omolola Alabi</h4>
             <span className="flex text-orange-400 gap-2 text-xs justify-end">
               <FaStar />
               <FaStar />
