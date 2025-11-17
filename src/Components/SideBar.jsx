@@ -70,7 +70,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
         {/* Header / Brand */}
         <div className="flex items-center justify-between p-4 border-b border-white/20">
           <div className="flex items-center gap-2">
-            <img src="{Logo}" alt="logo" className="w-8 h-8" />
+            <img src={Logo} alt="logo" className="w-11 h-5 bg-cyan-500" />
             <h1 className="font-bold text-lg tracking-wide">SkillHub</h1>
           </div>
           <button onClick={() => setIsOpen(false)} className="md:hidden">
