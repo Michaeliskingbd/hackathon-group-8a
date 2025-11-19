@@ -37,7 +37,7 @@ const Card = ({
           ))}
         </ul>
         <Link to="/Purchase">
-          <div className="mt-auto">
+          <div className="">
             <button className="bg-orange-400 text-white uppercase px-7 py-2 rounded-full hover:bg-cyan-700">
               {buttonText}
             </button>

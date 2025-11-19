@@ -45,7 +45,7 @@ const SignUpLogin = () => {
       });
       // console.log(response);
       if (response.status === 201) {
-        navigate("/");
+        navigate("/dashboard/overview");
         setUsername("");
         setPassword("");
         setLoading(false);
