@@ -14,13 +14,13 @@ const SignUpLogin = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
-  const [networkError, setNetworkError] = useState(false)
+  const [networkError, setNetworkError] = useState(false);
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
-  }
+  };
 
   // const toggleShowPassword = () => {
   //   setShowPassword(false);
@@ -34,50 +34,45 @@ const SignUpLogin = () => {
   const loginImage =
     "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D";
 
-  //API 
- const handleLogin = async (e) => {
-  e.preventDefault();
-   try {
-    setLoading(true)
-    const response = await axios.post('https://fakestoreapi.com/auth/login', {
-      username,
-      password
-    });
-    // console.log(response);
-    if (response.status === 201) {
-      navigate("/")
-      setUsername("");
-      setPassword("");
-      setLoading(false)
-      setErrorMessage(false)
-      // console.log(username, password)
-    } else if (response.status === 401) {
-        setErrorMessage(true)
-    } else (
-      setErrorMessage(false)
-    )
+  //API
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      setLoading(true);
+      const response = await axios.post("https://fakestoreapi.com/auth/login", {
+        username,
+        password,
+      });
+      // console.log(response);
+      if (response.status === 201) {
+        navigate("/");
+        setUsername("");
+        setPassword("");
+        setLoading(false);
+        setErrorMessage(false);
+        // console.log(username, password)
+      } else if (response.status === 401) {
+        setErrorMessage(true);
+      } else setErrorMessage(false);
+    } catch (error) {
+      console.error("Error", error);
+      setLoading(false);
+      setErrorMessage(error.response.data);
+      setNetworkError(error.message);
+    }
 
-     
-
-  } catch (error) {
-    console.error("Error", error)
-    setLoading(false);
-    setErrorMessage(error.response.data)
-   setNetworkError(error.message)
-   }
-
-  //  if (username && password !== "") {
-  //   setErrorMessage(false)
-  //  }
- }
+    //  if (username && password !== "") {
+    //   setErrorMessage(false)
+    //  }
+  };
 
   return (
-     <section className="relative min-h-screen w-full flex lg:flex-row flex-col font-[Poppins]">
-    <img 
-      src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-regular-free-img.png" 
-      alt="Logo" 
-      className="absolute top-6 left-6 z-50 w-44 h-auto"
-    />
+    <section className="relative min-h-screen w-full flex lg:flex-row flex-col font-[Poppins]">
+      <img
+        src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-regular-free-img.png"
+        alt="Logo"
+        className="absolute top-6 left-6 z-50 w-44 h-auto"
+      />
 
       <AnimatePresence mode="wait">
         <motion.img
@@ -93,23 +88,21 @@ const SignUpLogin = () => {
 
       {/* Overlay covers whole screen */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#003f4f]/90 to-[#007991]/70 backdrop-blur-sm"></div>
-    
+
       {/* Form Section */}
-     <div className="relative z-10 px-4 w-full lg:w-1/2 flex flex-col justify-center items-center min-h-screen">
-  <motion.div
-    key={isLogin ? "loginForm" : "signupForm"}
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-    className="w-full max-w-md p-8 rounded-2xl bg-white/20 backdrop-blur-xl border border-white/30 shadow-xl text-white mx-4"
-  >
+      <div className="relative z-10 px-4 w-full lg:w-1/2 flex flex-col justify-center items-center min-h-screen">
+        <motion.div
+          key={isLogin ? "loginForm" : "signupForm"}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="w-full max-w-md p-8 rounded-2xl bg-white/20 backdrop-blur-xl border border-white/30 shadow-xl text-white mx-4"
+        >
           <h2 className="text-3xl lg:text-4xl font-semibold text-center mb-6">
             {isLogin ? "Welcome Back" : "Create Account"}
           </h2>
- 
-          <form 
-          onSubmit={handleLogin}
-          className="space-y-4">
+
+          <form onSubmit={handleLogin} className="space-y-4">
             {!isLogin && (
               <input
                 type="Email"
@@ -128,31 +121,32 @@ const SignUpLogin = () => {
 
             <div className="relative">
               <input
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              type={showPassword ? "text" : "password"}
-              placeholder="Password"
-              className="w-full px-4 py-3 rounded-lg bg-white/30 border border-white/40 placeholder-white/75 text-white focus:ring-2 focus:ring-white outline-none"
-            />{showPassword ? (<MdRemoveRedEye 
-              onClick={toggleShowPassword}
-              className="absolute top-4 text-black right-4" />
-
-            ) : (
-              <IoEyeOffSharp
-              onClick={toggleShowPassword}
-              className="absolute text-black top-4 right-4" />
-            )}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                className="w-full px-4 py-3 rounded-lg bg-white/30 border border-white/40 placeholder-white/75 text-white focus:ring-2 focus:ring-white outline-none"
+              />
+              {showPassword ? (
+                <MdRemoveRedEye
+                  onClick={toggleShowPassword}
+                  className="absolute top-4 text-black right-4"
+                />
+              ) : (
+                <IoEyeOffSharp
+                  onClick={toggleShowPassword}
+                  className="absolute text-black top-4 right-4"
+                />
+              )}
             </div>
-              {setErrorMessage && <p className="text-red-400 text-center">{errorMessage}{networkError}</p>}
-            <button
-            className="w-full flex items-center justify-center py-3 rounded-lg bg-white text-[#007991] font-semibold text-lg hover:bg-gray-100 transition-all">            
-               {
-               loading ? (
-                 <Spinner />
-               ) : (
-                 isLogin ? "Login" : "Sign Up"
-                 )
-              }
+            {setErrorMessage && (
+              <p className="text-red-400 text-center">
+                {errorMessage}
+                {networkError}
+              </p>
+            )}
+            <button className="w-full flex items-center justify-center py-3 rounded-lg bg-white text-[#007991] font-semibold text-lg hover:bg-gray-100 transition-all">
+              {loading ? <Spinner /> : isLogin ? "Login" : "Sign Up"}
             </button>
           </form>
 

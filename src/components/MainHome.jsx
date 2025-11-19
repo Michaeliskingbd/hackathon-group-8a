@@ -1,17 +1,28 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect, useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
+import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 const MainHome = () => {
+  useEffect(() => {
+    Aos.init({ duration: 300, once: true });
+  }, []);
+
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
+  const mobileNav = () => {
+    setShowMobileNav(!showMobileNav);
+  };
   return (
     <section className="bg-[#ecf0f2]">
       <article className="relative rounded-br-[150px] lg:h-[110vh] h-[90vh] bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-01-free-img.jpg')] bg-fixed bg-cover bg-center">
         <div className="absolute bg-[#007991] inset-0 opacity-85 rounded-br-[150px]"></div>
         <nav className="flex items-center justify-between">
           <div className="z-10">
-            <Link to="/Ext">
+            <Link to="/">
               <img
                 src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-retina-free-img.png"
                 alt="logo"
@@ -46,9 +57,24 @@ const MainHome = () => {
                 START LEARNING
               </button>
             </Link>
-            <button className="lg:hidden bg-orange-400 Block p-2">
-              <IoMdMenu className="text-white w-14 h-12 hover:bg-#007991" />
-            </button>
+
+            <div className="lg:hidden bg-[#ff9635] p-2">
+              {showMobileNav ? (
+                <MdClose
+                  data-aos="fade-in"
+                  data-aos-duration="200"
+                  onClick={mobileNav}
+                  className="text-white text-xl"
+                />
+              ) : (
+                <button
+                  onClick={mobileNav}
+                  className="lg:hidden bg-orange-400 Block p-2"
+                >
+                  <IoMdMenu className="text-white w-14 h-12 hover:bg-#007991" />
+                </button>
+              )}
+            </div>
           </div>
         </nav>
 
@@ -62,11 +88,11 @@ const MainHome = () => {
             </p>
           </div>
           <div className="flex">
-            <h3 className="text-white z-10 font-bold text-[70px] leading-[1.2] ">
+            <h3 className="text-white z-10 font-bold text-[60px] leading-[1.2] ">
               <Typewriter
                 words={[
                   "Education Opens up the Mind",
-                  "Shaping thinkers, creators, and future leaders",
+                  "Shaping thinkers, and future leaders",
                 ]}
                 loop={0}
                 cursor
@@ -98,6 +124,42 @@ const MainHome = () => {
             </div>
           </div>
         </div>
+
+        {/* MobileNav */}
+
+        {showMobileNav && (
+          <section
+            data-aos="fade-right"
+            data-aos-duration="600"
+            className="lg:hidden absolute top-16 z-50 px-6 bg-white w-full h-[305px]"
+          >
+            <div className="relative flex flex-col gap-3 pt-[18px]">
+              <Link to="/">
+                <p>Home</p>
+              </Link>
+              <span className="border-b-[1px] border-black/15"></span>
+              <Link to="/AllCourses">
+                <p>All Courses</p>
+              </Link>
+              <span className="border-b-[1px] border-black/15"></span>
+              <Link to="/about">
+                <p>About Us</p>
+              </Link>
+              <span className="border-b-[1px] border-black/15"></span>
+              <Link to="/instructors">
+                <p>Instructors</p>
+              </Link>
+              <span className="border-b-[1px] border-black/15"></span>
+              <Link to="/pricingPage">
+                <p>Pricing & FAQ</p>
+              </Link>
+              <span className="border-b-[1px] border-black/15"></span>
+              <Link to="/contact">
+                <p>Contact</p>
+              </Link>
+            </div>
+          </section>
+        )}
       </article>
     </section>
   );

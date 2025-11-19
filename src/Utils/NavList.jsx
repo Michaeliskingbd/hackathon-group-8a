@@ -10,7 +10,7 @@ const NavList = () => {
       <Link to="/AllCourses">
         <li className="hover:cursor-pointer">All Courses</li>
       </Link>
-      <Link to="/aboutPage">
+      <Link to="/about">
         <li className="hover:cursor-pointer">About Us</li>
       </Link>
       <Link to="/instructors">

@@ -6,10 +6,8 @@ import { Link } from "react-router-dom";
 const HackFooter = () => {
   return (
     <section className="bg-gradient-to-b from-[#fdfdfd] to-[#eef3f5] text-[#1c1c1c] font-[Poppins]">
-      
       {/* Main Footer Content */}
       <article className="max-w-7xl mx-auto grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12 py-16 px-6">
-
         {/* Brand + Description */}
         <div className="space-y-6 text-center lg:text-left">
           <img
@@ -34,7 +32,7 @@ const HackFooter = () => {
             ].map((Icon, i) => (
               <Icon
                 key={i}
-                className="cursor-pointer transition-all duration-300 hover:text-orange-500 hover:-translate-y-[2px]"
+                className="cursor-pointer transition-all duration-300 hover:text-orange-400 hover:-translate-y-[2px]"
               />
             ))}
           </div>
@@ -70,7 +68,7 @@ const HackFooter = () => {
           <div className="space-y-4 text-[15px]">
             <div>
               <h4 className="font-semibold text-lg">Address</h4>
-              <p>123 Fifth Avenue, New York, NY 10160</p>
+              <p>Soun Ajagungbade Avenue, Ibadan, Oyo, Nigeria.</p>
             </div>
 
             <div>

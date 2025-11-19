@@ -1,12 +1,15 @@
 import React from "react";
 import { FaCertificate, FaCrown, FaPlay, FaRegClock } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Certificate from "../utils/Certificate";
 
 const Sub2 = () => {
   return (
     <section className="py-14 bg-[#ecf0f2]">
       <article className="relative px-10 flex lg:flex-row flex-col gap-8 items-center lg:h-96 h-full w-full bg-center bg-cover bg-fixed bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/background1.jpg')]">
         <div className="absolute bg-[#007991] inset-0 opacity-[0.95]"></div>
-        <div className="lg:py-28 py-10 flex-[22%] z-10">
+        <Certificate />
+        {/* <div className="lg:py-28 py-10 flex-[22%] z-10">
           <div className="flex gap-[2px] pt-[30px] pb-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,9 +67,9 @@ const Sub2 = () => {
             Trusted by thousands of students worldwide for delivering
             high-quality, engaging learning experiences.
           </p>
-        </div>
+        </div> */}
 
-        <div className=" lg:py-28  py-10 flex-[22%] z-10">
+        {/* <div className=" lg:py-28  py-10 flex-[22%] z-10">
           <div className="flex gap-[2px] pt-[38px] pb-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +184,7 @@ const Sub2 = () => {
             Receive a verified and recognized certificate that highlights your
             dedication, expertise, and readiness for new opportunities.
           </p>
-        </div>
+        </div> */}
 
         <div className="bg-white h-[275px] mt-[110px] px-10 py-10 flex-[34%] z-10">
           <div className="space-y-5">
@@ -192,7 +195,9 @@ const Sub2 = () => {
           </div>
           <div className="flex items-center pt-12 gap-2 text-base font-semibold hover:text-orange-400">
             <FaPlay className="text-sm p-[2px]" />
-            <a href="">GET STARTED</a>
+            <Link to="/login">
+              <a href="">GET STARTED</a>
+            </Link>
           </div>
         </div>
       </article>

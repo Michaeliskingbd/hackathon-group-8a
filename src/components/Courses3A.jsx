@@ -42,10 +42,11 @@ const Courses3A = () => {
           <ul className="lg:flex gap-6 text-lg text-orange-400 hidden">
             <NavList />
           </ul>
-
-          <button className="text-white lg:flex bg-orange-400 hover:bg-[#007991] px-5 py-2 font-semibold rounded-3xl hidden">
-            START LEARNING
-          </button>
+          <Link to="/login">
+            <button className="text-white lg:flex bg-orange-400 hover:bg-[#007991] px-5 py-2 font-semibold rounded-3xl hidden">
+              START LEARNING
+            </button>
+          </Link>
           <button className="lg:hidden bg-orange-400 Block p-[3px]">
             <IoMdMenu className="text-white w-10 h-8 hover:bg-#007991" />
           </button>

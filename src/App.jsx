@@ -41,6 +41,7 @@ import ItCsec from "./Components/ItCsec";
 import ItCsec2 from "./Components/ItCsec2";
 import SignUpLogin from "./pages/AuthPage";
 import AboutUs from "./pages/AboutUs";
+import Purchase from "./Components/Purchase";
 
 const App = () => {
   return (
@@ -50,16 +51,13 @@ const App = () => {
       <Route path="/AllCourses" index element={<AllCourses />} />
       <Route path="/Contact" index element={<Contact />} />
       <Route path="/instructors" element={<Instructors />} />
-<<<<<<< HEAD
-      {/*  <Route path="/aboutPage" elements={<AboutUS />} /> */}
-=======
       <Route path="/about" element={<AboutUs />} />
->>>>>>> 68f89f82adc7ba8794bd6e7ac471958370d1fd20
       <Route path="/All" element={<AllCou />} />
       <Route path="/login" element={<SignUpLogin />} />
       <Route path="/pricingPage" element={<PricingPage />} />
       <Route path="/Cou2" element={<Courses2A />} />
       <Route path="/Cou3" element={<Courses3A />} />
+      <Route path="/Purchase" element={<Purchase />} />
       //Extended pages
       <Route path="/ItHtml" element={<ItHtml />} />
       <Route path="/Ext" element={<CrsExtend />} />

@@ -24,7 +24,7 @@ const Nav = () => {
             <Link to="/AllCourses">
               <li className="hover:cursor-pointer">All Courses</li>
             </Link>
-            <Link to="/aboutPage">
+            <Link to="/about">
               <li className="hover:cursor-pointer">About Us</li>
             </Link>
             <Link to="/instructors">
@@ -37,10 +37,11 @@ const Nav = () => {
               <li className="hover:cursor-pointer">Contact</li>
             </Link>
           </ul>
-
-          <button className="text-white lg:flex hidden bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] px-5 py-2 font-semibold rounded-3xl">
-            START LEARNING
-          </button>
+          <Link to="/login">
+            <button className="text-white lg:flex hidden bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] px-5 py-2 font-semibold rounded-3xl">
+              START LEARNING
+            </button>
+          </Link>
           <button className="lg:hidden bg-orange-400 Block p-2">
             <IoMdMenu className="text-white w-14 h-12 hover:bg-#007991" />
           </button>
