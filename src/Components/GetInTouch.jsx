@@ -41,9 +41,11 @@ const GetInTouch = () => {
           </div>
           <div className="z-50">
             {/* //Desktop button */}
-            <button className="bg-orange-500 hover:bg-[#007991] transition-all duration-300 ease-in text-white rounded-3xl h-12 lg:w-48 w-[120px] font-semibold lg:flex hidden px-8 py-3 ">
-              START LEARNING
-            </button>
+            <Link to="/login">
+              <button className="bg-orange-500 hover:bg-[#007991] transition-all duration-300 ease-in text-white rounded-3xl h-12 lg:w-48 w-[120px] font-semibold lg:flex hidden px-8 py-3 ">
+                START LEARNING
+              </button>
+            </Link>
 
             {/* //Mobile Button */}
             <button

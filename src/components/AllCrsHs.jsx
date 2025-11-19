@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AllCrsHs = () => {
   return (
     <section className="bg-[#ecf0f2]">
-      <article className="relative rounded-br-[150px] lg:h-[72vh] h-[45vh] bg-fixed bg-cover bg-center bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-08-free-img.jpg')] ">
+      <article className="relative rounded-br-[150px] lg:h-[72vh] h-[55vh] bg-fixed bg-cover bg-center bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-08-free-img.jpg')] ">
         <div className="absolute bg-[#007991] inset-0 opacity-85 rounded-br-[150px]"></div>
         <nav className="flex items-center justify-between mt-[-10px]">
           <div className="z-10">
@@ -23,7 +23,7 @@ const AllCrsHs = () => {
               <Link to="/AllCourses">
                 <li className="hover:cursor-pointer">All Courses</li>
               </Link>
-              <Link to="/aboutPage">
+              <Link to="/about">
                 <li className="hover:cursor-pointer">About Us</li>
               </Link>
               <Link to="/instructors">

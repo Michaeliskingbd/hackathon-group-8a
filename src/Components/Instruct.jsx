@@ -27,7 +27,7 @@ const Instruct = () => {
               <Link to="/AllCourses">
                 <li>All Courses</li>
               </Link>
-              <Link to="/AboutPage">
+              <Link to="/about">
                 <li>About Us </li>
               </Link>
               <Link to="/instructors">

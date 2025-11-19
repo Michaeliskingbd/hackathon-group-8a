@@ -41,6 +41,7 @@ import ItCsec from "./Components/ItCsec";
 import ItCsec2 from "./Components/ItCsec2";
 import SignUpLogin from "./pages/AuthPage";
 import AboutUs from "./pages/AboutUs";
+import Purchase from "./Components/Purchase";
 
 const App = () => {
   return (
@@ -56,6 +57,7 @@ const App = () => {
       <Route path="/pricingPage" element={<PricingPage />} />
       <Route path="/Cou2" element={<Courses2A />} />
       <Route path="/Cou3" element={<Courses3A />} />
+      <Route path="/Purchase" element={<Purchase />} />
       //Extended pages
       <Route path="/ItHtml" element={<ItHtml />} />
       <Route path="/Ext" element={<CrsExtend />} />

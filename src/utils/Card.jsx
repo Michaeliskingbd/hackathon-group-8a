@@ -1,5 +1,6 @@
 import React from "react";
 import { TbCurrencyNaira } from "react-icons/tb";
+import { Link } from "react-router-dom";
 const Card = ({
   title,
   price,
@@ -11,7 +12,7 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`rounded-lg mt-44 px-4 h-[500px] flex flex-col justify-center items-center text-center ${textColor} ${bgColor}`}
+      className={`rounded-lg mt-44 px-4 h-[600px] flex flex-col justify-center items-center text-center ${textColor} ${bgColor}`}
     >
       <artcile>
         <h3 className="text-l font-bold mb-4">{title}</h3>
@@ -35,9 +36,13 @@ const Card = ({
             <li key={index}>{feature}</li>
           ))}
         </ul>
-        <button className="bg-orange-400 text-white uppercase px-7 py-2 rounded-full hover:bg-cyan-700">
-          {buttonText}
-        </button>
+        <Link to="/Purchase">
+          <div className="">
+            <button className="bg-orange-400 text-white uppercase px-7 py-2 rounded-full hover:bg-cyan-700">
+              {buttonText}
+            </button>
+          </div>
+        </Link>
       </artcile>
     </div>
   );
