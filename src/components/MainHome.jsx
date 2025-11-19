@@ -5,8 +5,11 @@ import { IoMdMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
+import { useUser } from "../context/UserContext";
 
 const MainHome = () => {
+  const { user } = useUser();
+
   useEffect(() => {
     Aos.init({ duration: 300, once: true });
   }, []);
@@ -52,11 +55,13 @@ const MainHome = () => {
                 <li className="hover:cursor-pointer">Contact</li>
               </Link>
             </ul>
-            <Link to="/login">
-              <button className="text-white lg:flex hidden bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] px-5 py-2 font-semibold rounded-3xl">
-                START LEARNING
-              </button>
-            </Link>
+            {!user && (
+              <Link to="/login">
+                <button className="text-white lg:flex hidden bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] px-5 py-2 font-semibold rounded-3xl">
+                  START LEARNING
+                </button>
+              </Link>
+            )}
 
             <div className="lg:hidden bg-[#ff9635] p-2">
               {showMobileNav ? (
@@ -110,11 +115,13 @@ const MainHome = () => {
               career growth, creativity and digital innovation.
             </p>
             <div className="flex items-center flex-row gap-10 z-10">
-              <Link to="/dashboard">
-                <button className="text-white uppercase bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] py-2 px-7 rounded-3xl text-base font-semibold">
-                  View My Progress
-                </button>
-              </Link>
+              {user && (
+                <Link to="/dashboard/overview">
+                  <button className="text-white uppercase bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] py-2 px-7 rounded-3xl text-base font-semibold">
+                    View My Progress
+                  </button>
+                </Link>
+              )}
               <div className="flex items-center gap-2 text-white text-base font-semibold hover:text-orange-400 hover:cursor-pointer">
                 <FaPlay className="text-sm p-[2px]" />
                 <Link to="/AllCourses">

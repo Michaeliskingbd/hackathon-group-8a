@@ -9,11 +9,13 @@ const AllCrsHs = () => {
         <div className="absolute bg-[#007991] inset-0 opacity-85 rounded-br-[150px]"></div>
         <nav className="flex items-center justify-between mt-[-10px]">
           <div className="z-10">
-            <img
-              src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-retina-free-img.png"
-              alt="logo"
-              className="lg:w-44 w-32 my-7 mx-10 "
-            />
+            <Link to="/">
+              <img
+                src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-retina-free-img.png"
+                alt="logo"
+                className="lg:w-44 w-32 my-7 mx-10 "
+              />
+            </Link>
           </div>
           <div className="flex items-center gap-10 mx-8 z-10">
             <ul className="text-white text-base lg:flex gap-5 hidden">

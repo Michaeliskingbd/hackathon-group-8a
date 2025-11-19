@@ -5,8 +5,7 @@ import { IoEyeOffSharp } from "react-icons/io5";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Spinner from "../Utils/Spinner";
-
-//'https://fakestoreapi.com/auth/login'
+import { useUser } from "../context/UserContext";
 
 const SignUpLogin = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -14,56 +13,53 @@ const SignUpLogin = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
-  const [networkError, setNetworkError] = useState(false);
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
+
+  const { setUser } = useUser();
 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
   };
 
-  // const toggleShowPassword = () => {
-  //   setShowPassword(false);
-  //   if (username && password !== "") {
-  //     setShowPassword(!showPassword)
-  //   }
-  // }
-
   const signUpImage =
     "https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2021/03/bg-07-free-img.jpg";
+
   const loginImage =
     "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D";
 
-  //API
+  // API Login
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       setLoading(true);
-      const response = await axios.post("https://fakestoreapi.com/auth/login", {
+
+      const response = await axios.post("https://dummyjson.com/auth/login", {
         username,
         password,
       });
-      // console.log(response);
-      if (response.status === 201) {
-        navigate("/dashboard/overview");
+
+      if (response.status === 200) {
+        const userData = response.data;
+
+        // Save user + tokens to localStorage (PERSIST LOGIN)
+        localStorage.setItem("user", JSON.stringify(userData));
+
+        // Update context
+        setUser(userData);
+
         setUsername("");
         setPassword("");
         setLoading(false);
-        setErrorMessage(false);
-        // console.log(username, password)
-      } else if (response.status === 401) {
-        setErrorMessage(true);
-      } else setErrorMessage(false);
+        setErrorMessage("");
+
+        navigate("/dashboard/overview");
+      }
     } catch (error) {
       console.error("Error", error);
       setLoading(false);
-      setErrorMessage(error.response.data);
-      setNetworkError(error.message);
+      setErrorMessage(error.response?.data?.message || "Login failed");
     }
-
-    //  if (username && password !== "") {
-    //   setErrorMessage(false)
-    //  }
   };
 
   return (
@@ -86,7 +82,7 @@ const SignUpLogin = () => {
         />
       </AnimatePresence>
 
-      {/* Overlay covers whole screen */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#003f4f]/90 to-[#007991]/70 backdrop-blur-sm"></div>
 
       {/* Form Section */}
@@ -99,11 +95,11 @@ const SignUpLogin = () => {
           className="w-full max-w-md p-8 rounded-2xl bg-white/20 backdrop-blur-xl border border-white/30 shadow-xl text-white mx-4"
         >
           <h2 className="text-3xl lg:text-4xl font-semibold text-center mb-6">
-            {isLogin ? "Welcome Back" : "Create Account"}
+            {isLogin ? "Create Account" : "Welcome Back"}
           </h2>
 
           <form onSubmit={handleLogin} className="space-y-4">
-            {!isLogin && (
+            {isLogin && (
               <input
                 type="Email"
                 placeholder="Email"
@@ -130,33 +126,32 @@ const SignUpLogin = () => {
               {showPassword ? (
                 <MdRemoveRedEye
                   onClick={toggleShowPassword}
-                  className="absolute top-4 text-black right-4"
+                  className="absolute top-4 text-black right-4 cursor-pointer"
                 />
               ) : (
                 <IoEyeOffSharp
                   onClick={toggleShowPassword}
-                  className="absolute text-black top-4 right-4"
+                  className="absolute text-black top-4 right-4 cursor-pointer"
                 />
               )}
             </div>
-            {setErrorMessage && (
-              <p className="text-red-400 text-center">
-                {errorMessage}
-                {networkError}
-              </p>
+
+            {errorMessage && (
+              <p className="text-red-400 text-center">{errorMessage}</p>
             )}
+
             <button className="w-full flex items-center justify-center py-3 rounded-lg bg-white text-[#007991] font-semibold text-lg hover:bg-gray-100 transition-all">
-              {loading ? <Spinner /> : isLogin ? "Login" : "Sign Up"}
+              {loading ? <Spinner /> : isLogin ? "Sign Up" : "Login"}
             </button>
           </form>
 
           <p className="mt-6 text-center text-white/90">
-            {isLogin ? "Don't have an account?" : "Already have an account?"}
+            {isLogin ? "Already have an account?" : "Don't have an account?"}
             <button
               onClick={() => setIsLogin(!isLogin)}
               className="ml-2 underline font-semibold hover:text-white"
             >
-              {isLogin ? "Sign Up" : "Login"}
+              {isLogin ? "Login" : "Sign Up"}
             </button>
           </p>
         </motion.div>
@@ -166,6 +161,3 @@ const SignUpLogin = () => {
 };
 
 export default SignUpLogin;
-
-//mor_2314 username
-//83r5^_ password

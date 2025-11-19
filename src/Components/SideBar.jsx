@@ -8,6 +8,7 @@ import NavItem from "./NavItem";
 import NavList from "../Utils/NavList";
 import { ImProfile } from "react-icons/im";
 import Logo from "../assets/edu.png";
+import { MdOutlineAssignment } from "react-icons/md";
 
 const SideBar = ({ isOpen, setIsOpen }) => {
   const location = useLocation();
@@ -47,6 +48,11 @@ const SideBar = ({ isOpen, setIsOpen }) => {
       to: "/dashboard/notice",
       icon: <BsEnvelope className="h-5 w-5" />,
       label: "Notice Board",
+    },
+    {
+      to: "/dashboard/assignment",
+      icon: <MdOutlineAssignment className="h-5 w-5" />,
+      label: "Assignments",
     },
   ];
 

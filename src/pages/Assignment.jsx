@@ -24,7 +24,10 @@ const Assignment = () => {
           📄 Submit Your Assignment
         </h1>
 
-        <form onSubmit={handleSubmit} className="flex flex-col items-center gap-5">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col items-center gap-5"
+        >
           <input
             required
             type="url"

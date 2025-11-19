@@ -7,7 +7,7 @@ const Nav = () => {
     <div>
       <nav className="flex items-center justify-between pb-8">
         <div className="z-10">
-          <Link to="/Ext">
+          <Link to="/">
             <img
               src="https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/logo-retina-free-img.png"
               alt="logo"

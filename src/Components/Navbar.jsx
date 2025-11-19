@@ -5,8 +5,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useUser } from "../context/UserContext";
 
 const Navbar = () => {
+  const { user } = useUser();
+
   useEffect(() => {
     AOS.init({ duration: 300, once: true });
   }, []);
@@ -72,11 +75,13 @@ const Navbar = () => {
                 <li>Contact</li>
               </Link>
             </ul>
-            <Link to="/login">
-              <button className="px-5 py-2 font-[poppins] font-semibold tracking-wider w-[200px] bg-[#ff9635] transition-all duration-150 ease-in rounded-full hover:bg-[#007991]">
-                START LEARNING
-              </button>
-            </Link>
+            {user && (
+              <Link to="/login">
+                <button className="px-5 py-2 font-[poppins] font-semibold tracking-wider w-[200px] bg-[#ff9635] transition-all duration-150 ease-in rounded-full hover:bg-[#007991]">
+                  START LEARNING
+                </button>
+              </Link>
+            )}
           </div>
         </div>
 
