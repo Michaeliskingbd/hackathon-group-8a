@@ -214,7 +214,7 @@ const Sub2 = () => {
           <h5 className="font-semibold text-lg">Features of Our Courses</h5>
           <h2 className="font-semibold text-5xl">Why choose Us?</h2>
           <p className="font-light">
-            We provide more than just online courses- we offer a complete
+            We provide more than just online courses, we offer a complete
             learning experience designed for your success. Our platform combines
             expert instructors, easy-to-follow lessons, and hands-on projects to
             help you master real-world skills. With flexible learning schedules,
