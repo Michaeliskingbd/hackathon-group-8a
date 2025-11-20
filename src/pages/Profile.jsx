@@ -12,8 +12,11 @@ import {
   Star,
   Clock,
 } from "lucide-react";
+import { useUser } from "../context/UserContext";
 
 export default function Profile() {
+  const { user } = useUser();
+
   const personalInfo = [
     {
       label: "Date of Birth",
@@ -69,7 +72,7 @@ export default function Profile() {
           <div className="relative z-10 flex flex-col md:flex-row justify-between items-center">
             <div>
               <h1 className="text-4xl font-extrabold mb-2">
-                Welcome back, Jane!
+                Welcome back, {user && <span>{user.firstName}</span>}
               </h1>
               <p className="text-cyan-100 text-lg">
                 You’ve completed{" "}
@@ -100,7 +103,11 @@ export default function Profile() {
                 <User className="w-14 h-14" />
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-800">Jane Doe</h2>
+                {user && (
+                  <h2 className="text-3xl font-bold text-gray-800">
+                    {user.firstName} Doe
+                  </h2>
+                )}
                 <p className="text-gray-600">Frontend Developer Student</p>
                 <div className="flex items-center gap-2 mt-2 text-sm text-cyan-700">
                   <Star className="w-4 h-4" />

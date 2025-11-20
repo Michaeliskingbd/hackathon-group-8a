@@ -2,8 +2,11 @@ import React from "react";
 import { FaCertificate, FaCrown, FaPlay, FaRegClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Certificate from "../utils/Certificate";
+import { useUser } from "../context/UserContext";
 
 const Sub2 = () => {
+  const { user } = useUser();
+
   return (
     <section className="py-14 bg-[#ecf0f2]">
       <article className="relative px-10 flex lg:flex-row flex-col gap-8 items-center lg:h-96 h-full w-full bg-center bg-cover bg-fixed bg-[url('https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/10/background1.jpg')]">
@@ -194,10 +197,14 @@ const Sub2 = () => {
             </h1>
           </div>
           <div className="flex items-center pt-12 gap-2 text-base font-semibold hover:text-orange-400">
-            <FaPlay className="text-sm p-[2px]" />
-            <Link to="/login">
-              <a href="">GET STARTED</a>
-            </Link>
+            {!user && (
+              <>
+                <FaPlay className="text-sm p-[2px]" />
+                <Link to="/login">
+                  <a href="">GET STARTED</a>
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </article>
@@ -207,7 +214,7 @@ const Sub2 = () => {
           <h5 className="font-semibold text-lg">Features of Our Courses</h5>
           <h2 className="font-semibold text-5xl">Why choose Us?</h2>
           <p className="font-light">
-            We provide more than just online courses- we offer a complete
+            We provide more than just online courses, we offer a complete
             learning experience designed for your success. Our platform combines
             expert instructors, easy-to-follow lessons, and hands-on projects to
             help you master real-world skills. With flexible learning schedules,

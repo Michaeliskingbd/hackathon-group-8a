@@ -3,6 +3,8 @@ import { Check, Copy, CheckCircle2 } from "lucide-react";
 import Navbar from "./Navbar";
 import Nav from "../utils/Nav";
 import { TbCurrencyNaira } from "react-icons/tb";
+import { Link } from "react-router-dom";
+import Trial from "../utils/Trial";
 
 const Purchase = () => {
   const [copied, setCopied] = useState(false);
@@ -87,7 +89,7 @@ const Purchase = () => {
                 Account Name
               </span>
               <span className="text-gray-900 text-sm font-semibold">
-                LearnHub Education Inc.
+                SkillHub Education Inc.
               </span>
             </div>
           </div>
@@ -110,9 +112,16 @@ const Purchase = () => {
           </div>
 
           {/* confirmation button*/}
-          <p className="text-center py-5 mx-28 cursor-pointer text-orange-400 transition-all hover:text-[#007991] font-semibold">
-            I have sent the money
-          </p>
+
+          <Link to="/">
+            <p className="text-center py-5 mx-28 cursor-pointer text-orange-400 transition-all hover:text-[#007991] font-semibold">
+              I have sent the money
+            </p>
+          </Link>
+
+          {/* <div>
+            <Trial />
+          </div> */}
 
           {/* Footer */}
           <div className="text-center">

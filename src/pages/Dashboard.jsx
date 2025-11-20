@@ -26,8 +26,11 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Nav from "../utils/Nav";
+import { useUser } from "../context/UserContext";
 
 const Dashboard = () => {
+  const { user } = useUser();
+
   const [selectedDay, setSelectedDay] = useState("Mon");
 
   // Progress data for line chart
@@ -78,7 +81,10 @@ const Dashboard = () => {
             {/* Left section */}
             <div className="space-y-4 md:space-y-5">
               <h1 className="text-4xl font-extrabold tracking-tight">
-                Welcome back, <span className="text-cyan-200">Jane!</span>
+                Welcome back,{" "}
+                {user && (
+                  <span className="text-cyan-200">{user.firstName}</span>
+                )}
               </h1>
 
               <p className="text-cyan-100 text-lg max-w-md">
