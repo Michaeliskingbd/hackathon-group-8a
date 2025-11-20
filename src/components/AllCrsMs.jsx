@@ -21,7 +21,7 @@ const AllCrsMs = () => {
             in today's digital world.
           </p>
         </div>
-        <Link to="/dashboard">
+        <Link to="/dashboard/overview">
           <div className="flex-[20%]">
             <button className="bg-orange-400 transition-all duration-150 ease-in hover:bg-[#007991] text-white px-6 py-2 rounded-3xl">
               VIEW PROGRESS

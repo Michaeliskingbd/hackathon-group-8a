@@ -73,7 +73,7 @@ const HackFooter = () => {
 
             <div>
               <h4 className="font-semibold text-lg">Phone</h4>
-              <p>929-242-6868</p>
+              <p>+23470099122</p>
             </div>
 
             <div>
