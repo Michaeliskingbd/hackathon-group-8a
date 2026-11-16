@@ -21,7 +21,7 @@ const Instruct = () => {
             </div>
         <div className='z-50'>
             <ul  className='lg:flex space-x-8 pl-40 text-white hidden '>
-             <li>Home</li>
+             <Link to='/'><li>Home</li></Link>
              <li>All Courses</li>
              <li>About Us </li>
              <li>Instructors</li> 

@@ -7,7 +7,7 @@ const GetInTouch = () => {
     const [menuOpen, setMenuOpen] = useState(false);
   return (
     <section className='bg-gray-200'>
-        <div className='relative bg-[url(https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-04-free-img.jpg)] h-[420px] lg:bg-center bg-cover rounded-br-[200px]  '>
+        <div className='relative bg-[url(https://websitedemos.net/online-courses-02/wp-content/uploads/sites/542/2020/02/bg-06-free-img.jpg)] h-[420px] lg:bg-center bg-cover rounded-br-[200px]  '>
         <div className='absolute inset-0 bg-[#007991] opacity-80 rounded-br-[200px] '>
 
         </div>
@@ -20,7 +20,7 @@ const GetInTouch = () => {
                      <li>Home</li>
                      <li>All Courses</li>
                      <li>About Us </li>
-                    <Link to='/instructor'><li>Instructors</li> </Link> 
+                    <Link to='/instructors'><li>Instructors</li> </Link> 
                      <li>Prices & FAQ</li>
                     <li>Contact</li> 
                     </ul>
